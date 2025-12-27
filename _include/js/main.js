@@ -726,23 +726,23 @@ $(".open_fancybox14").click(function() {
 $(".open_fancybox15").click(function() {
     $.fancybox.open([
         {
-            href : '_include/img/work/FancyBoxes/fancybox15/1.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox15/1.JPG',
              
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox15/2.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox15/2.JPG',
              
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox15/3.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox15/3.JPG',
            
         },
 		{
-            href : '_include/img/work/FancyBoxes/fancybox15/4.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox15/4.JPG',
             
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox15/5.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox15/5.JPG',
             
         },
         {
@@ -834,23 +834,23 @@ $(".open_fancybox17").click(function() {
              
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox17/2.png',
+            href : '_include/img/work/FancyBoxes/fancybox17/2.PNG',
              
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox17/3.png',
+            href : '_include/img/work/FancyBoxes/fancybox17/3.PNG',
            
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox17/4.png',
+            href : '_include/img/work/FancyBoxes/fancybox17/4.PNG',
            
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox17/5.png',
+            href : '_include/img/work/FancyBoxes/fancybox17/5.PNG',
            
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox17/6.png',
+            href : '_include/img/work/FancyBoxes/fancybox17/6.PNG',
            
         },
     ], {
@@ -888,11 +888,11 @@ $(".open_fancybox18").click(function() {
            
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox18/4.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox18/4.JPG',
            
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox18/5.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox18/5.JPG',
            
         },
         {
@@ -964,50 +964,50 @@ $(".open_fancybox18").click(function() {
 $(".open_fancybox19").click(function() {
     $.fancybox.open([
         {
-            href : '_include/img/work/FancyBoxes/fancybox19/1.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox19/1.JPG',
              
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox19/2.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox19/2.JPG',
              
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox19/3.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox19/3.JPG',
            
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox19/4.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox19/4.JPG',
            
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox19/5.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox19/5.JPG',
            
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox19/6.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox19/6.JPG',
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox19/7.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox19/7.JPG',
            
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox19/8.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox19/8.JPG',
            
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox19/9.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox19/9.JPG',
            
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox19/10.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox19/10.JPG',
              
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox19/11.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox19/11.JPG',
              
         },
         {
-            href : '_include/img/work/FancyBoxes/fancybox19/12.jpg',
+            href : '_include/img/work/FancyBoxes/fancybox19/12.JPG',
              
         }
     ], {

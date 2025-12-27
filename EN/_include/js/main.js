@@ -114,6 +114,11 @@ BRUSHED.filter = function (){
 			  itemSelector : '.item-thumbs',
 			  layoutMode : 'fitRows'
 			});
+			
+			// Force a layout refresh after a short delay to fix alignment issues
+			setTimeout(function() {
+				$container.isotope('layout');
+			}, 100);
 		});
 	
 		

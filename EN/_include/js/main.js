@@ -115,10 +115,18 @@ BRUSHED.filter = function (){
 			  layoutMode : 'fitRows'
 			});
 			
-			// Force a layout refresh after a short delay to fix alignment issues
+			// Force multiple layout refreshes to ensure proper alignment
 			setTimeout(function() {
 				$container.isotope('layout');
 			}, 100);
+			
+			setTimeout(function() {
+				$container.isotope('layout');
+			}, 500);
+			
+			setTimeout(function() {
+				$container.isotope('layout');
+			}, 1000);
 		});
 	
 		

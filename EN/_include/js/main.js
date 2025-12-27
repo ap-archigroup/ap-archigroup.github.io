@@ -1585,6 +1585,19 @@ BRUSHED.menu = function(){
 		easing: 'easeOutExpo',
 		filter: ':not(.external)'
 	});
+	
+	// Fallback direct handler for menu links
+	$('#menu-nav a, #menu-nav-mobile a').on('click', function(e){
+		var href = $(this).attr('href');
+		if(href && href.indexOf('#') === 0 && href.length > 1){
+			var $target = $(href);
+			if($target.length > 0){
+				e.preventDefault();
+				var targetOffset = $target.offset().top - 30;
+				$('html, body').animate({scrollTop: targetOffset}, 750, 'easeOutExpo');
+			}
+		}
+	});
 }
 
 /* ==================================================

@@ -11,10 +11,8 @@ Version: 1.0
 /* ==================================================
    Basic Styles
 ================================================== */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
- @import url(http://fonts.googleapis.com/css?family=PT+Sans|Raleway:400,200,300);
-@import "http://webfonts.ru/import/cleanvertising.css";
-@import "http://webfonts.ru/import/fira.css";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+ @import url(https://fonts.googleapis.com/css?family=PT+Sans|Raleway:400,200,300);
 html, body {
 	height: 100%;
 }

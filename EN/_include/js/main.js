@@ -77,12 +77,7 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-                                            {image : 'img/main.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
-								
-									],
-									
-		// Theme Options			   
-		progress_bar			:	0,			// Timer for each slide							
+                                            {image : '_include/img/main.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
 		mouse_scrub				:	0
 		
 	});
@@ -104,8 +99,8 @@ BRUSHED.nav = function(){
 ================================================== */
 
 BRUSHED.filter = function (){
-	if($('#projects').length > 0){		
-		var $container = $('#projects');
+	if($('#thumbs').length > 0){		
+		var $container = $('#thumbs');
 		
 		$container.imagesLoaded(function() {
 			$container.isotope({

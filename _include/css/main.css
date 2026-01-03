@@ -447,27 +447,56 @@ color:#ffffff;
 }
 
 #home-slider .control-nav {
- 
 	position: absolute;
 	width: 100%;
-	background: #2F3238;
-	height: 50px;
+	height: 80px;
 	bottom: 0;
 	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
- 
- 
- 
- 
+#home-slider #nextsection {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease;
+	animation: bounce 2s infinite;
+}
+
+#home-slider #nextsection:hover {
+	border-color: rgba(255, 255, 255, 1);
+	background: rgba(255, 255, 255, 0.1);
+	transform: scale(1.1);
+}
+
 #home-slider #nextsection i {
-font-size: 40px;
-color: #ffffff;
-position: absolute;
-left: 50%;
-top: 25%;
- margin: -7px 0 0 -20px;
-line-height: 1em;
+	font-size: 24px;
+	color: #ffffff;
+	line-height: 1em;
+	transition: all 0.3s ease;
+}
+
+#home-slider #nextsection:hover i {
+	transform: translateY(3px);
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-10px);
+	}
+	60% {
+		transform: translateY(-5px);
+	}
 }
 
  

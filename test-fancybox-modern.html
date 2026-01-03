@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FancyBox Modern Style Test</title>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- FancyBox CSS -->
+    <link href="_include/css/fancybox/jquery.fancybox.css?v=2.0" rel="stylesheet">
+    <link href="_include/css/fancybox-modern.css?v=2.0" rel="stylesheet">
+    
+    <!-- FancyBox JS -->
+    <script src="_include/js/jquery.fancybox.pack.js"></script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            background: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .test-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+        .test-button:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .info {
+            margin-top: 50px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .checklist {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .checklist li {
+            margin: 10px 0;
+            padding: 5px;
+        }
+        .success { color: green; }
+        .warning { color: orange; }
+    </style>
+</head>
+<body>
+    <h1>🎨 FancyBox Modern Style Test Page</h1>
+    
+    <p>Click the button below to test the modernized lightbox:</p>
+    
+    <a href="_include/img/work/Comercial/Burger King/01.jpg" class="test-button fancybox" data-fancybox-group="test">
+        🖼️ Open Test Image
+    </a>
+    
+    <div class="info">
+        <h2>What You Should See:</h2>
+        <ul class="checklist">
+            <li>✨ <strong>Blurred background</strong> with glassmorphism effect (Apple-style)</li>
+            <li>🎯 <strong>Circular close button</strong> in top-right (semi-transparent with blur)</li>
+            <li>⬅️➡️ <strong>Circular navigation arrows</strong> that appear on hover</li>
+            <li>🎬 <strong>Smooth animations</strong> when opening/closing</li>
+            <li>🔄 <strong>Rotation effect</strong> on close button hover</li>
+            <li>💫 <strong>Scale animations</strong> on navigation arrows</li>
+        </ul>
+        
+        <h3 style="margin-top: 30px;">🔧 Troubleshooting:</h3>
+        <p><strong>If you don't see the modern style:</strong></p>
+        <ol class="checklist">
+            <li>Press <code>Ctrl+Shift+R</code> (or <code>Cmd+Shift+R</code> on Mac) to hard refresh</li>
+            <li>Clear your browser cache completely</li>
+            <li>Try in an incognito/private window</li>
+            <li>Check browser console (F12) for any CSS loading errors</li>
+            <li>Verify you're using a modern browser (Chrome, Firefox, Edge, Safari)</li>
+        </ol>
+        
+        <p style="margin-top: 20px; color: #666; font-size: 14px;">
+            <strong>Note:</strong> The backdrop-filter effect requires a modern browser. 
+            It works in Chrome 76+, Firefox 103+, Safari 9+, and Edge 79+.
+        </p>
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                padding: 0,
+                openEffect: 'elastic',
+                closeEffect: 'elastic',
+                helpers: {
+                    overlay: {
+                        locked: false
+                    }
+                }
+            });
+            
+            // Debug: Log when FancyBox is loaded
+            console.log('✅ FancyBox initialized');
+            console.log('✅ Modern CSS should be loaded');
+            
+            // Check if CSS files are loaded
+            var links = document.querySelectorAll('link[rel="stylesheet"]');
+            console.log('📄 Loaded CSS files:');
+            links.forEach(function(link) {
+                console.log('  - ' + link.href);
+            });
+        });
+    </script>
+</body>
+</html>

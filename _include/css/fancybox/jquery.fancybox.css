@@ -22,16 +22,30 @@
 	top: 0;
 	left: 0;
 	z-index: 8020;
+	animation: fancyboxFadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fancyboxFadeIn {
+	from {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 
 .fancybox-skin {
 	position: relative;
-	background: #2F3238;
-	color: #7F8289;
+	background: rgba(0, 0, 0, 0.5);
+	color: #ffffff;
 	text-shadow: none;
-	-webkit-border-radius: 0;
-	   -moz-border-radius: 0;
-	        border-radius: 0;
+	-webkit-border-radius: 12px;
+	   -moz-border-radius: 12px;
+	        border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 .fancybox-opened {
@@ -100,36 +114,46 @@
 
 .fancybox-close {
 	position: absolute;
-	right: 0;
-	top: 0;
-	width: 50px;
-	height: 50px;
+	right: 20px;
+	top: 20px;
+	width: 44px;
+	height: 44px;
 	cursor: pointer;
 	z-index: 9000;
-	background-image: none;
-	background-color: #26292E;
-	
-	opacity: 0.5;
-	
-	-webkit-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;	
-	   -moz-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
-		 -o-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
-		    transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
+	background-image: none !important;
+	background-color: rgba(255, 255, 255, 0.1) !important;
+	border-radius: 50% !important;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.18) !important;
+	opacity: 0.9;
+	transform: scale(1);
+	-webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	   -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		 -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fancybox-close i {
 	left: 50%;
 	top: 50%;
 	margin: -11px 0 0 -11px;
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 1em;
 	position: absolute;
 	color: #FFFFFF;
+	transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fancybox-close:hover {
 	opacity: 1;
-	background-color:#DE5E60;
+	background-color: rgba(239, 68, 68, 0.9);
+	transform: scale(1.1) rotate(90deg);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.fancybox-close:hover i {
+	transform: scale(1.1);
 }
 
 .fancybox-nav {
@@ -157,46 +181,68 @@
 .fancybox-nav span {
 	position: absolute;
 	top: 50%;
-	width: 50px;
-	height: 50px;
-	margin-top: -25px;
+	width: 54px;
+	height: 54px;
+	margin-top: -27px;
 	cursor: pointer;
 	z-index: 8040;
-	background-image: none;
-	background-color: #26292E;
-	
-	opacity: 0.5;
-	
-	-webkit-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;	
-	   -moz-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
-		 -o-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
-		    transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
+	background-image: none !important;
+	background-color: rgba(255, 255, 255, 0.1) !important;
+	border-radius: 50% !important;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.18) !important;
+	opacity: 0;
+	transform: scale(0.9);
+	-webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	   -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		 -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fancybox-prev span {
+	left: 30px;
+}
+
+.fancybox-next span {
+	right: 30px;
 }
 
 .fancybox-prev span i {
 	left: 50%;
 	top: 50%;
-	margin: -15px 0 0 -17px;
-	font-size: 30px;
+	margin: -12px 0 0 -10px;
+	font-size: 24px;
 	line-height: 1em;
 	position: absolute;
 	color: #FFFFFF;
+	transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.fancybox-prev:hover span i {
+	transform: translateX(-3px);
+}
 
 .fancybox-next span i {
 	left: 50%;
 	top: 50%;
-	margin: -15px 0 0 -15px;
-	font-size: 30px;
+	margin: -12px 0 0 -10px;
+	font-size: 24px;
 	line-height: 1em;
 	position: absolute;
 	color: #FFFFFF;
+	transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fancybox-next:hover span i {
+	transform: translateX(3px);
 }
 
 .fancybox-nav:hover span {
 	opacity: 1;
-	background-color:#DE5E60;
+	background-color: rgba(255, 255, 255, 0.25);
+	transform: scale(1.05);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .fancybox-tmp {
@@ -222,7 +268,9 @@
 	overflow: hidden !important;
 	display: none;
 	z-index: 8010;
-	background: url('fancybox_overlay.png');
+	background: rgba(0, 0, 0, 0.75) !important;
+	backdrop-filter: blur(20px) !important;
+	-webkit-backdrop-filter: blur(20px) !important;
 }
 
 .fancybox-overlay-fixed {

@@ -1612,7 +1612,13 @@ BRUSHED.menu = function(){
     	scrollOffset: 30,
     	scrollThreshold: 0.5,
 		easing: 'easeOutExpo',
-		filter: ':not(.external)'
+		filter: ':not(.external):not(.submenu a)'
+	});
+	
+	// Allow submenu links to work as regular links
+	$('#menu-nav .submenu a, #menu-nav-mobile .submenu a').on('click', function(e) {
+		e.stopPropagation();
+		// Let the link work normally
 	});
 }
 

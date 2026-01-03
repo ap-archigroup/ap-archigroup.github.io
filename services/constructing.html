@@ -171,6 +171,64 @@
     width: 80%;
   }
   
+  /* Submenu Styles */
+  #header .menu .nav li.has-submenu {
+    position: relative;
+  }
+  
+  #header .menu .nav .submenu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.98);
+    min-width: 140px;
+    list-style: none;
+    margin: 0;
+    padding: 4px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    backdrop-filter: blur(10px);
+  }
+  
+  #header .menu .nav li.has-submenu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 5px;
+  }
+  
+  #header .menu .nav .submenu li {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #header .menu .nav .submenu li a {
+    display: block;
+    padding: 8px 16px;
+    color: #333;
+    font-size: 10px;
+    transition: all 0.2s ease;
+    font-weight: 400;
+  }
+  
+  #header .menu .nav .submenu li a:hover {
+    color: #FF5347;
+    background: rgba(255, 83, 71, 0.08);
+  }
+  
+  #header .menu .nav .submenu li a:before {
+    display: none;
+  }
+  
+  #header .menu .nav .submenu li.current a {
+    color: #FF5347;
+    font-weight: 600;
+  }
+  
   #main-container {
     padding-top: 0;
   }
@@ -537,7 +595,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <ul class="nav">
               <li><a href="../index.html">Accueil</a></li>
               <li><a href="../index.html#about">À Propos</a></li>
-              <li class="current"><a href="constructing.html">Services</a></li>
+              <li class="current has-submenu"><a href="../index.html#Service">Services</a>
+                <ul class="submenu">
+                  <li><a href="architecture.html">Architecture</a></li>
+                  <li class="current"><a href="constructing.html">Chantiers</a></li>
+                  <li><a href="furnishing.html">Ameublement</a></li>
+                </ul>
+              </li>
               <li><a href="../index.html#portfolio">Portfolio</a></li>
               <li><a href="../index.html#contact">Contact</a></li>
             </ul>

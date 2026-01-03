@@ -3,28 +3,30 @@
 ================================================== */
 
 .button {
-  	display: inline-block;
-  	margin-bottom: 0;
-  	padding: 13px 26px;
-  	-webkit-border-radius: 0;
-       -moz-border-radius: 0;
-            border-radius: 0;
-  	background-color: #3C3F45;
-  	color: #23262C;
-  	vertical-align: middle;
-  	text-align: center;
-  	text-transform: uppercase;
-  	font-weight:500;
-  	font-size: 16px;
-  	cursor: pointer;
-	border:none;
-  
-	-webkit-transition: all 0.1s linear;
-       -moz-transition: all 0.1s linear;
-         -o-transition: all 0.1s linear;
-            transition: all 0.1s linear;
-  	*border: 0;
-  	*zoom: 1;
+	display: inline-block;
+	margin-bottom: 0;
+	padding: 14px 32px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+	color: #FFFFFF;
+	vertical-align: middle;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 15px;
+	cursor: pointer;
+	border: none;
+	letter-spacing: 0.5px;
+	box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+	
+	-webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	-moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	-o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	*border: 0;
+	*zoom: 1;
 }
 
 /*--- Hover/Active/Focus State ---*/
@@ -32,8 +34,10 @@
 .button:hover,
 .button:active,
 .button:focus {
-	background-color: #DE5E60;
-	color:#FFFFFF;
+	background: linear-gradient(135deg, #764BA2 0%, #667EEA 100%);
+	color: #FFFFFF;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
 }
 
 /* --- Button Sizes --- */

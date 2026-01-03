@@ -1,0 +1,7 @@
+/* Russian language flag override */
+a.languFR {
+    background-image: url(../_include/img/FR.png) !important;
+}
+a.languRU {
+    background-image: url(../_include/img/1RU.png) !important;
+}

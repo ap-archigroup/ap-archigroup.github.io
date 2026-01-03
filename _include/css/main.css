@@ -345,7 +345,8 @@ background: url(../img/1FR.png) top no-repeat;
 a.languFR:hover {
 background-position: bottom;
 }
-<!--a.languRU {
+
+a.languRU {
  
 list-style: none;
 	color: #000000;
@@ -364,7 +365,7 @@ background: url(../img/RU.png) top no-repeat;
 }
 a.languRU:hover {
 background-position: bottom;
-} -->
+}
 
 
 a.mylink {
@@ -676,9 +677,39 @@ margin: -100px;
    
 } 
 .Plus{
-	  text-align: center;
-	  padding: 2em 2em;
+	text-align: center;
+	padding: 2em 2em;
 }
+
+.Plus a {
+	display: inline-block;
+	padding: 12px 30px;
+	margin: 0 auto;
+	background: linear-gradient(135deg, #FF5347 0%, #ff6b63 100%);
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 30px;
+	border: none;
+	box-shadow: 0 4px 15px rgba(255, 83, 71, 0.3);
+	transition: all 0.3s ease;
+	text-decoration: none;
+}
+
+.Plus a:hover {
+	background: linear-gradient(135deg, #ff6b63 0%, #FF5347 100%);
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(255, 83, 71, 0.4);
+	color: #fff;
+}
+
+.Plus a:active {
+	transform: translateY(0);
+	box-shadow: 0 2px 10px rgba(255, 83, 71, 0.3);
+}
+
 a.various{
 margin: 3px;
   display: inline-block;
@@ -910,6 +941,48 @@ text-align:center;
 	overflow: hidden;
 	margin-bottom: 25px;
 	cursor: pointer;
+	transition: transform 0.4s ease;
+}
+
+.span4.profile .image-wrap:hover {
+	transform: scale(1.08);
+}
+
+.span4.profile .image-wrap:hover .hover-wrap {
+	opacity: 1;
+}
+
+.span4.profile .image-wrap .hover-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, rgba(255, 83, 71, 0.85) 0%, rgba(255, 107, 99, 0.85) 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.4s ease;
+}
+
+.span4.profile .image-wrap .hover-wrap::after {
+	content: "Plus d'Info";
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 15px 35px;
+	border: 2px solid white;
+	border-radius: 30px;
+	background: transparent;
+	transition: all 0.3s ease;
+}
+
+.span4.profile .image-wrap:hover .hover-wrap::after {
+	background: white;
+	color: #FF5347;
 }
 
 .image-wrap img {
@@ -1479,6 +1552,26 @@ footer .credits {
 	50% {transform: rotateY(180deg);
 		animation-timing-function: ease-out;
 	}
+	100% {transform: rotateY(0deg);
+		animation-timing-function: ease-in;
+	}
+}
+
+/* Language-specific hover text for service images */
+html[lang="en-US"] .span4.profile .image-wrap .hover-wrap::after,
+html[lang="en"] .span4.profile .image-wrap .hover-wrap::after {
+	content: "Details";
+}
+
+html[lang="ru"] .span4.profile .image-wrap .hover-wrap::after {
+	content: "Подробнее";
+}
+
+html[lang="fr"] .span4.profile .image-wrap .hover-wrap::after,
+html[lang="fr-FR"] .span4.profile .image-wrap .hover-wrap::after {
+	content: "Plus d'Info";
+}
+
 	100% {transform: rotateY(0deg);
 		animation-timing-function: ease-in;
 	}

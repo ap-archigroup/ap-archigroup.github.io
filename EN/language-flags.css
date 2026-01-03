@@ -1,0 +1,7 @@
+/* English language flag override */
+a.languENG {
+    background-image: url(../_include/img/1ENG.png) !important;
+}
+a.languFR {
+    background-image: url(../_include/img/FR.png) !important;
+}

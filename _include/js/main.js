@@ -187,6 +187,313 @@ $(document).ready(function() {
 });
 
 
+/* Service Pages - Open in iframe */
+$(".open_service_architecture").click(function(e) {
+    e.preventDefault();
+    console.log('Architecture service clicked!');
+    var cacheBuster = '?v=' + new Date().getTime();
+    console.log('Opening:', basePath + 'services/architecture.html' + cacheBuster);
+    $.fancybox.open({
+        href: basePath + 'services/architecture.html' + cacheBuster,
+        type: 'iframe',
+        width: '90%',
+        height: '90%',
+        autoSize: false,
+        fitToView: false,
+        aspectRatio: false,
+        scrolling: 'auto',
+        padding: 0,
+        margin: [20, 60, 20, 60],
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        closeBtn: true,
+        iframe: {
+            preload: true
+        },
+        helpers: {
+            overlay: {
+                css: {
+                    'background': 'rgba(0, 0, 0, 0.75)',
+                    'backdrop-filter': 'blur(10px)',
+                    '-webkit-backdrop-filter': 'blur(10px)'
+                }
+            }
+        }
+    });
+    return false;
+});
+
+$(".open_service_constructing").click(function(e) {
+    e.preventDefault();
+    console.log('Constructing service clicked!');
+    var cacheBuster = '?v=' + new Date().getTime();
+    console.log('Opening:', basePath + 'services/constructing.html' + cacheBuster);
+    $.fancybox.open({
+        href: basePath + 'services/constructing.html' + cacheBuster,
+        type: 'iframe',
+        width: '90%',
+        height: '90%',
+        autoSize: false,
+        fitToView: false,
+        aspectRatio: false,
+        scrolling: 'auto',
+        padding: 0,
+        margin: [20, 60, 20, 60],
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        closeBtn: true,
+        iframe: {
+            preload: true
+        },
+        helpers: {
+            overlay: {
+                css: {
+                    'background': 'rgba(0, 0, 0, 0.75)',
+                    'backdrop-filter': 'blur(10px)',
+                    '-webkit-backdrop-filter': 'blur(10px)'
+                }
+            }
+        }
+    });
+    return false;
+});
+
+$(".open_service_furnishing").click(function(e) {
+    e.preventDefault();
+    console.log('Furnishing service clicked!');
+    var cacheBuster = '?v=' + new Date().getTime();
+    console.log('Opening:', basePath + 'services/furnishing.html' + cacheBuster);
+    $.fancybox.open({
+        href: basePath + 'services/furnishing.html' + cacheBuster,
+        type: 'iframe',
+        width: '90%',
+        height: '90%',
+        autoSize: false,
+        fitToView: false,
+        aspectRatio: false,
+        scrolling: 'auto',
+        padding: 0,
+        margin: [20, 60, 20, 60],
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        closeBtn: true,
+        iframe: {
+            preload: true
+        },
+        helpers: {
+            overlay: {
+                css: {
+                    'background': 'rgba(0, 0, 0, 0.75)',
+                    'backdrop-filter': 'blur(10px)',
+                    '-webkit-backdrop-filter': 'blur(10px)'
+                }
+            }
+        }
+    });
+    return false;
+});
+
+/* EN Service Pages - Open in iframe */
+$(".open_service_architecture_en").click(function(e) {
+    e.preventDefault();
+    var cacheBuster = '?v=' + new Date().getTime();
+    $.fancybox.open({
+        href: basePath + 'EN/services/architecture.html' + cacheBuster,
+        type: 'iframe',
+        width: '90%',
+        height: '90%',
+        autoSize: false,
+        fitToView: false,
+        aspectRatio: false,
+        scrolling: 'auto',
+        padding: 0,
+        margin: [20, 60, 20, 60],
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        closeBtn: true,
+        iframe: {
+            preload: true
+        },
+        helpers: {
+            overlay: {
+                css: {
+                    'background': 'rgba(0, 0, 0, 0.75)',
+                    'backdrop-filter': 'blur(10px)',
+                    '-webkit-backdrop-filter': 'blur(10px)'
+                }
+            }
+        }
+    });
+    return false;
+});
+
+$(".open_service_constructing_en").click(function(e) {
+    e.preventDefault();
+    var cacheBuster = '?v=' + new Date().getTime();
+    $.fancybox.open({
+        href: basePath + 'EN/services/constructing.html' + cacheBuster,
+        type: 'iframe',
+        width: '90%',
+        height: '90%',
+        autoSize: false,
+        fitToView: false,
+        aspectRatio: false,
+        scrolling: 'auto',
+        padding: 0,
+        margin: [20, 60, 20, 60],
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        closeBtn: true,
+        iframe: {
+            preload: true
+        },
+        helpers: {
+            overlay: {
+                css: {
+                    'background': 'rgba(0, 0, 0, 0.75)',
+                    'backdrop-filter': 'blur(10px)',
+                    '-webkit-backdrop-filter': 'blur(10px)'
+                }
+            }
+        }
+    });
+    return false;
+});
+
+$(".open_service_furnishing_en").click(function(e) {
+    e.preventDefault();
+    var cacheBuster = '?v=' + new Date().getTime();
+    $.fancybox.open({
+        href: basePath + 'EN/services/furnishing.html' + cacheBuster,
+        type: 'iframe',
+        width: '90%',
+        height: '90%',
+        autoSize: false,
+        fitToView: false,
+        aspectRatio: false,
+        scrolling: 'auto',
+        padding: 0,
+        margin: [20, 60, 20, 60],
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        closeBtn: true,
+        iframe: {
+            preload: true
+        },
+        helpers: {
+            overlay: {
+                css: {
+                    'background': 'rgba(0, 0, 0, 0.75)',
+                    'backdrop-filter': 'blur(10px)',
+                    '-webkit-backdrop-filter': 'blur(10px)'
+                }
+            }
+        }
+    });
+    return false;
+});
+
+/* RU Service Pages - Open in iframe */
+$(".open_service_architecture_ru").click(function(e) {
+    e.preventDefault();
+    var cacheBuster = '?v=' + new Date().getTime();
+    $.fancybox.open({
+        href: basePath + 'RU/services/architecture.html' + cacheBuster,
+        type: 'iframe',
+        width: '90%',
+        height: '90%',
+        autoSize: false,
+        fitToView: false,
+        aspectRatio: false,
+        scrolling: 'auto',
+        padding: 0,
+        margin: [20, 60, 20, 60],
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        closeBtn: true,
+        iframe: {
+            preload: true
+        },
+        helpers: {
+            overlay: {
+                css: {
+                    'background': 'rgba(0, 0, 0, 0.75)',
+                    'backdrop-filter': 'blur(10px)',
+                    '-webkit-backdrop-filter': 'blur(10px)'
+                }
+            }
+        }
+    });
+    return false;
+});
+
+$(".open_service_constructing_ru").click(function(e) {
+    e.preventDefault();
+    var cacheBuster = '?v=' + new Date().getTime();
+    $.fancybox.open({
+        href: basePath + 'RU/services/constructing.html' + cacheBuster,
+        type: 'iframe',
+        width: '90%',
+        height: '90%',
+        autoSize: false,
+        fitToView: false,
+        aspectRatio: false,
+        scrolling: 'auto',
+        padding: 0,
+        margin: [20, 60, 20, 60],
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        closeBtn: true,
+        iframe: {
+            preload: true
+        },
+        helpers: {
+            overlay: {
+                css: {
+                    'background': 'rgba(0, 0, 0, 0.75)',
+                    'backdrop-filter': 'blur(10px)',
+                    '-webkit-backdrop-filter': 'blur(10px)'
+                }
+            }
+        }
+    });
+    return false;
+});
+
+$(".open_service_furnishing_ru").click(function(e) {
+    e.preventDefault();
+    var cacheBuster = '?v=' + new Date().getTime();
+    $.fancybox.open({
+        href: basePath + 'RU/services/furnishing.html' + cacheBuster,
+        type: 'iframe',
+        width: '90%',
+        height: '90%',
+        autoSize: false,
+        fitToView: false,
+        aspectRatio: false,
+        scrolling: 'auto',
+        padding: 0,
+        margin: [20, 60, 20, 60],
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        closeBtn: true,
+        iframe: {
+            preload: true
+        },
+        helpers: {
+            overlay: {
+                css: {
+                    'background': 'rgba(0, 0, 0, 0.75)',
+                    'backdrop-filter': 'blur(10px)',
+                    '-webkit-backdrop-filter': 'blur(10px)'
+                }
+            }
+        }
+    });
+    return false;
+});
+
+
 $(".open_fancybox1").click(function() {
     $.fancybox.open([
         {
@@ -1567,6 +1874,7 @@ $(".open_fancybox28").click(function() {
     });
     return false;
 });
+
 /* ==================================================
    Twitter Feed
 ================================================== */

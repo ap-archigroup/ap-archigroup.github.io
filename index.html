@@ -32,9 +32,8 @@
 <link href="_include/css/supersized.shutter.css" rel="stylesheet">
 
 <!-- FancyBox -->
-<link href="_include/css/fancybox/jquery.fancybox.css?v=2.0" rel="stylesheet">
+<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
 <link href="_include/css/fancybox/jquery.fancybox-thumbs.css" rel="stylesheet">
-<link href="_include/css/fancybox-modern.css?v=2.0" rel="stylesheet">
 
 <!-- Font Icons -->
 <link href="_include/css/fonts.css" rel="stylesheet">
@@ -80,7 +79,7 @@
   ga('create', 'UA-61332868-1', 'auto');
   ga('send', 'pageview');
 
-  document.addEventListener('contextmenu', event => event.preventDefault());
+  // document.addEventListener('contextmenu', event => event.preventDefault());
 </script>
 
 <!-- End Analytics -->
@@ -139,9 +138,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             	<li class="current"><a href="#home-slider">Accueil</a></li>
 				<li class="has-submenu"><a href="#Service">Services</a>
                     <ul class="submenu">
-                        <li><a href="services/architecture.html">Architecture</a></li>
-                        <li><a href="services/constructing.html">Chantiers</a></li>
-                        <li><a href="services/furnishing.html">Ameublement</a></li>
+                        <li><a href="javascript:void(0)" class="open_service_architecture">Architecture</a></li>
+                        <li><a href="javascript:void(0)" class="open_service_constructing">Chantiers</a></li>
+                        <li><a href="javascript:void(0)" class="open_service_furnishing">Ameublement</a></li>
                     </ul>
                 </li>
                 <li><a href="#work">Projets</a></li>
@@ -177,7 +176,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     	
         <!-- Start Profile -->
     	<div class="span4 profile">
-        	<a href="services/architecture.html" class="image-wrap">
+        	<a href="javascript:void(0)" class="image-wrap open_service_architecture">
                 <div class="hover-wrap">
                      
                 </div>
@@ -192,7 +191,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
          <!-- Start Profile -->
     	<div class="span4 profile">
-        	<a href="services/constructing.html" class="image-wrap">
+        	<a href="javascript:void(0)" class="image-wrap open_service_constructing">
                 <div class="hover-wrap">
                      
                 </div>
@@ -208,7 +207,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
         <!-- Start Profile -->
     	<div class="span4 profile">
-        	<a href="services/furnishing.html" class="image-wrap">
+        	<a href="javascript:void(0)" class="image-wrap open_service_furnishing">
                 <div class="hover-wrap">
                      
                 </div>

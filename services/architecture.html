@@ -34,6 +34,7 @@
 <!-- FancyBox -->
 <link href="../_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
 <link href="../_include/css/fancybox/jquery.fancybox-thumbs.css" rel="stylesheet">
+<link href="../_include/css/fancybox-modern.css" rel="stylesheet">
 
 <!-- Font Icons -->
 <link href="../_include/css/fonts.css" rel="stylesheet">
@@ -58,7 +59,7 @@
     background: #F3F3F3;
   }
   
-  /* Professional Navigation Styles */
+  /* Simple Header with Logo */
   #header {
     position: fixed;
     top: 0;
@@ -68,7 +69,33 @@
     background: rgba(255, 255, 255, 0.98);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
+    padding: 8px 0;
+  }
+  
+  #header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  #header .logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  #header .logo h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #2C2F33;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: lowercase;
+  }
+  
+  #header .logo h1 .light {
+    font-weight: 700;
+    color: #FF5347;
   }
   
   #header .color {
@@ -570,32 +597,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   <!-- HEADER -->
   <div id="header">
-    <div class="color"></div>
     <div class="container">
-      <div class="row">
-        <div class="span5">
-          <div class="logo">
-            <a href="../index.html"><h1>ap-<span class="light">archigroup</span></h1></a>
-          </div>
-        </div>
-        
-        <div class="span7">
-          <div class="menu">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../index.html#about">About</a></li>
-              <li class="current has-submenu"><a href="../index.html#Service">Services</a>
-                <ul class="submenu">
-                  <li class="current"><a href="architecture.html">Architecture</a></li>
-                  <li><a href="constructing.html">Chantiers</a></li>
-                  <li><a href="furnishing.html">Ameublement</a></li>
-                </ul>
-              </li>
-              <li><a href="../index.html#work">Portfolio</a></li>
-              <li><a href="../index.html#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
+      <div class="logo">
+        <img src="../_include/img/logo.png" alt="ap-archigroup">
+        <h1>ap-<span class="light">archigroup</span></h1>
       </div>
     </div>
   </div>

@@ -4,8 +4,41 @@
 /* Blurred overlay background - Apple style */
 .fancybox-overlay {
     background: rgba(0, 0, 0, 0.75) !important;
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+
+/* Force blur for iframe overlays specifically */
+.fancybox-overlay-fixed {
+    background: rgba(0, 0, 0, 0.75) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+
+/* Ensure iframe wrapper gets blurred overlay */
+.fancybox-type-iframe + .fancybox-overlay,
+.fancybox-opened.fancybox-type-iframe ~ .fancybox-overlay {
+    background: rgba(0, 0, 0, 0.75) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+
+/* Make close button more visible with red color */
+.fancybox-close {
+    background-color: rgba(220, 38, 38, 0.95) !important;
+    border: 2px solid rgba(255, 255, 255, 0.95) !important;
+    opacity: 1 !important;
+}
+
+.fancybox-close i {
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+}
+
+.fancybox-close:hover {
+    background-color: rgba(185, 28, 28, 1) !important;
+    transform: scale(1.15) rotate(90deg) !important;
+    box-shadow: 0 8px 24px rgba(220, 38, 38, 0.7) !important;
 }
 
 /* Show navigation arrows only on hover */
@@ -59,8 +92,8 @@
     }
     to {
         opacity: 1;
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
 }
 
@@ -144,4 +177,88 @@
 .fancybox-image {
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
+}
+
+/* ========================================= */
+/* LIQUID GLASS SCROLLBAR FOR FANCYBOX IFRAMES */
+/* ========================================= */
+
+/* Glass scrollbar for FancyBox iframe containers */
+.fancybox-inner::-webkit-scrollbar,
+.fancybox-wrap::-webkit-scrollbar,
+.fancybox-type-iframe .fancybox-inner::-webkit-scrollbar {
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.fancybox-inner::-webkit-scrollbar-track,
+.fancybox-wrap::-webkit-scrollbar-track,
+.fancybox-type-iframe .fancybox-inner::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(5px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+    border-radius: 10px !important;
+    margin: 4px 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.fancybox-inner::-webkit-scrollbar-thumb,
+.fancybox-wrap::-webkit-scrollbar-thumb,
+.fancybox-type-iframe .fancybox-inner::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, 
+      rgba(255, 255, 255, 0.25) 0%, 
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0.2) 100%) !important;
+    backdrop-filter: blur(20px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    box-shadow: 
+      0 4px 15px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.35),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.12) !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.fancybox-inner::-webkit-scrollbar-thumb:hover,
+.fancybox-wrap::-webkit-scrollbar-thumb:hover,
+.fancybox-type-iframe .fancybox-inner::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, 
+      rgba(255, 83, 71, 0.45) 0%, 
+      rgba(255, 83, 71, 0.3) 50%,
+      rgba(255, 83, 71, 0.4) 100%) !important;
+    backdrop-filter: blur(25px) saturate(200%) !important;
+    -webkit-backdrop-filter: blur(25px) saturate(200%) !important;
+    border: 1px solid rgba(255, 83, 71, 0.35) !important;
+    box-shadow: 
+      0 6px 20px rgba(255, 83, 71, 0.25),
+      inset 0 1px 0 rgba(255, 255, 255, 0.45),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.18),
+      0 0 20px rgba(255, 83, 71, 0.2) !important;
+    transform: scale(1.05) !important;
+}
+
+.fancybox-inner::-webkit-scrollbar-thumb:active,
+.fancybox-wrap::-webkit-scrollbar-thumb:active,
+.fancybox-type-iframe .fancybox-inner::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(135deg, 
+      rgba(255, 83, 71, 0.55) 0%, 
+      rgba(255, 83, 71, 0.4) 50%,
+      rgba(255, 83, 71, 0.5) 100%) !important;
+    transform: scale(0.98) !important;
+}
+
+/* Firefox support for FancyBox */
+.fancybox-inner,
+.fancybox-wrap,
+.fancybox-type-iframe .fancybox-inner {
+    scrollbar-width: thin !important;
+    scrollbar-color: rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Smooth scrolling inside iframe popups */
+.fancybox-inner,
+.fancybox-type-iframe .fancybox-inner {
+    scroll-behavior: smooth !important;
+    overflow: auto !important;
 }

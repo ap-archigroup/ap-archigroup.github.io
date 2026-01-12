@@ -1948,3 +1948,9 @@ html[lang="fr-FR"] .span4.profile .image-wrap .hover-wrap::after {
        -o-transition: none;
           transition: none;
 }
+
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}

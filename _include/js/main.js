@@ -1875,6 +1875,101 @@ $(".open_fancybox28").click(function() {
     return false;
 });
 
+$(".open_fancybox29").click(function() {
+    $.fancybox.open([
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox29/1.jpg',
+             
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox29/2.jpg',
+             
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox29/3.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox29/4.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox29/5.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox29/6.jpg',
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox29/7.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox29/8.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox29/9.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox29/10.jpg',
+           
+        }
+    ], {
+        nextEffect : 'none',
+        prevEffect : 'none',
+        padding    : 0,
+        helpers    : {
+            title : {
+                type: 'none'  
+            },
+            thumbs : {
+                width  : 85,
+                height : 60,
+                source : function( item ) {
+                    return item.href.replace('_b.jpg', '_s.jpg');
+                }
+            }
+        }
+    });
+    return false;
+});
+
+$(".open_fancybox30").click(function() {
+    $.fancybox.open([
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox30/1.pdf',
+             
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox30/2.pdf',
+             
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox30/3.jpg',
+           
+        }
+    ], {
+        nextEffect : 'none',
+        prevEffect : 'none',
+        padding    : 0,
+        helpers    : {
+            title : {
+                type: 'none'  
+            },
+            thumbs : {
+                width  : 85,
+                height : 60,
+                source : function( item ) {
+                    return item.href.replace('_b.jpg', '_s.jpg');
+                }
+            }
+        }
+    });
+    return false;
+});
+
 /* ==================================================
    Twitter Feed
 ================================================== */

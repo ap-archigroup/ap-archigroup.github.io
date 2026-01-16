@@ -979,7 +979,9 @@ text-align:right
 
 .item-thumbs a + img {
 	width: 100%;
-	height: auto;
+	/*height: auto;*/
+	height: 200px;
+	object-fit: cover;
 	display: block;
 }
 

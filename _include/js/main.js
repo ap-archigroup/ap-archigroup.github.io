@@ -807,6 +807,10 @@ $(".open_fancybox9").click(function() {
 $(".open_fancybox10").click(function() {
     $.fancybox.open([
         {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox10/0.jpg',
+             
+        },
+        {
             href : basePath + '_include/img/work/FancyBoxes/fancybox10/1.jpg',
              
         },
@@ -828,6 +832,46 @@ $(".open_fancybox10").click(function() {
         },
         {
             href : basePath + '_include/img/work/FancyBoxes/fancybox10/6.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox10/7.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox10/8.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox10/9.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox10/10.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox10/11.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox10/12.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox10/13.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox10/14.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox10/15.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox10/16.jpg',
            
         },
     ], {
@@ -1878,23 +1922,23 @@ $(".open_fancybox28").click(function() {
 $(".open_fancybox29").click(function() {
     $.fancybox.open([
         {
-            href : basePath + '_include/img/work/FancyBoxes/fancybox29/1.jpg',
+            href : basePath + '_include/img/work/FancyBoxes/fancybox29/1.JPG',
              
         },
         {
-            href : basePath + '_include/img/work/FancyBoxes/fancybox29/2.jpg',
+            href : basePath + '_include/img/work/FancyBoxes/fancybox29/2.JPG',
              
         },
         {
-            href : basePath + '_include/img/work/FancyBoxes/fancybox29/3.jpg',
+            href : basePath + '_include/img/work/FancyBoxes/fancybox29/3.JPG',
            
         },
         {
-            href : basePath + '_include/img/work/FancyBoxes/fancybox29/4.jpg',
+            href : basePath + '_include/img/work/FancyBoxes/fancybox29/4.JPG',
            
         },
         {
-            href : basePath + '_include/img/work/FancyBoxes/fancybox29/5.jpg',
+            href : basePath + '_include/img/work/FancyBoxes/fancybox29/5.JPG',
            
         },
         {
@@ -1914,6 +1958,10 @@ $(".open_fancybox29").click(function() {
         },
         {
             href : basePath + '_include/img/work/FancyBoxes/fancybox29/10.jpg',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox29/11.jpg',
            
         }
     ], {

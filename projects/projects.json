@@ -1,0 +1,506 @@
+﻿{
+  "projects": [
+    {
+      "folder": "Pistes Michelin 3D-2025",
+      "category": ["design"],
+      "title": {
+        "fr": "Projet de concours de réhabilitation des pistes d'essai Michelin, Clermont-Ferrand, France 2025",
+        "en": "Project for the competition of rehabilitation of Michelin test tracks, Clermont-Ferrand, France 2025",
+        "ru": "Конкурсный проект по реабилитации испытательных трасс Michelin, Клермон-Ферран, Франция 2025 "
+      },
+      "link": "",
+      "order": 1
+    },
+    {
+      "folder": "Fontenay aux roses-2023",
+      "category": ["individual"],
+      "title": {
+        "fr": "Projet d’extension et de surélévation d’une maison individuelle à Fontenay-aux-Roses, France, 2023",
+        "en": "Project for the extension and elevation of a family house in Fontenay-aux-Roses, France, 2023",
+        "ru": "Проект реконструкции жилого дома в Фонтене-о-Роз, Франция, 2023"
+      },
+      "link": "",
+      "order": 1
+    },
+    {
+      "folder": "La Celle Saint Cloud Wiem-2023",
+      "category": ["individual"],
+      "title": {
+        "fr": "Projet d'extension d'une maison avec la réalisation d’une piscine souterraine à La Celle Saint Cloud, France 2023",
+        "en": "Project to extend a house with the construction of an underground pool in La Celle Saint Cloud, France 2023",
+        "ru": "Проект перепланировки  дома с сооружением подземного бассейна в Ла Сель-Сан-Клу, Франция 2023 "
+      },
+      "link": "",
+      "order": 1
+    },
+    {
+      "folder": "Massy-Appartement-2022",
+      "category": ["individual"],
+      "title": {
+        "fr": "Projet de rénovation d'un appartement à Massy, France 2022",
+        "en": "Apartment renovation project in Massy, France 2022",
+        "ru": "Проект перепланировки квартиры в Масси, Франция 2022"
+      },
+      "link": "",
+      "order": 1
+    },
+    {
+      "folder": "Ceracuse-2022",
+      "category": ["design"],
+      "title": {
+        "fr": "Projet de concours pour une auberge de jeunesse à Syracuse en Italie, 2022",
+        "en": "Competition project for a youth hostel in Syracuse, Italy, 2022 ",
+        "ru": "Конкурсный проект молодежного хостела в Сиракузах, Италия, 2022"
+      },
+      "link": "",
+      "order": 1
+    },
+    {
+      "folder": "Hotel-Itouroup-2022",
+      "category": ["individual"],
+      "title": {
+        "fr": "Îles Kouriles",
+        "en": "Kurile Islands",
+        "ru": "Курильские острова"
+      },
+      "subtitle": {
+        "fr": "Projet d'un hôtel sur l'Île Itouroup en Russie, 2022",
+        "en": "Hotel project on the Itouroup Island in Russia, 2022",
+        "ru": "Проект Дома-гостиницы на острове Итуруп, Россия 2022"
+      },
+      "link": "",
+      "order": 2
+    },
+    {
+      "folder": "Asnieres-Appartement-2022",
+      "category": ["design"],
+      "title": {
+        "fr": "Projet de réaménagement d'un appartement à Asnieres-sur-Seine, Haute Seine 2022",
+        "en": "Design of the apartment in Asnieres sur Seine, North west of Paris 2022",
+        "ru": "Проект перепланировки квартиры в Аньер сюр Сен, северо-запад Парижа 2022"
+      },
+      "link": "",
+      "order": 3
+    },
+    {
+      "folder": "Palaiseau-Maison-2022",
+      "category": ["individual"],
+      "title": {
+        "fr": "Projet de réaménagement d'une maison à Palaiseau, Essonne 2022",
+        "en": "Renovation and extension in Palaiseau, South of Paris 2022",
+        "ru": "Проект перепланировки дома в Палезо, юг Парижа 2022"
+      },
+      "link": "",
+      "order": 4
+    },
+    {
+      "folder": "",
+      "category": ["design"],
+      "title": {
+        "fr": "Visite virtuelle de l'appartement à Asnieres sur Seine, Hauts-de-Seine 2022",
+        "en": "Virtual tour of the apartment in Asnieres sur Seine, North west of Paris 2022",
+        "ru": "Виртуальный визит квартиры в Аньер сюр Сен, северо-запад Парижа 2022"
+      },
+      "previewImage": "tours/1/preview.jpg",
+      "link": "https://webobook.com/tour/8hsJrOemcJt42ek9RMIYYdPWnKYsdmDG/OGRFwZN3BSvnP0uQFu_IAkVQvYS5aLww",
+      "order": 5
+    },
+    {
+      "folder": "Massy-Maison-Extension",
+      "category": ["design"],
+      "title": {
+        "fr": "Projet de rehaussement d'une maison à Massy, Paris",
+        "en": "Project of superstructure and extension of a house in Massy in Paris area",
+        "ru": "Проект надстройки и пристройки дома в Масси в пригороде Парижа"
+      },
+      "link": "",
+      "order": 6
+    },
+    {
+      "folder": "Eze-Villa",
+      "category": ["design"],
+      "title": {
+        "fr": "Projet de rehaussement et d'extension d'une villa à Eze sur la Côte d'Azur",
+        "en": "Project of superstructure and extension of a villa in Eze on the French riviera",
+        "ru": "Проект реконструкции виллы в Эз на Лазурном берегу"
+      },
+      "link": "",
+      "order": 7
+    },
+    {
+      "folder": "Seine-et-Marne-Maison",
+      "category": ["design"],
+      "title": {
+        "fr": "Projet de rehaussement et d'extension d'une maison à Seine-et-Marnes, Paris",
+        "en": "Project of superstructure and extension of a house in Seine-et-Marne, Paris",
+        "ru": "Проект реконструкции дома в Seine-et-Marne, Paris"
+      },
+      "link": "",
+      "order": 8
+    },
+    {
+      "folder": "Tranche-sur-mer-Interieurs",
+      "category": ["individual"],
+      "title": {
+        "fr": "Version 2",
+        "en": "Version 2",
+        "ru": "Версия 2"
+      },
+      "subtitle": {
+        "fr": "Vues intérieures - Villa à Tranche sur mer",
+        "en": "Inside vues - Villa in Tranche sur mer",
+        "ru": "Интерьеры - Вилла в Транш сюр мэр"
+      },
+      "link": "",
+      "order": 9
+    },
+    {
+      "folder": "Tranche-sur-mer-Exterieurs",
+      "category": ["individual"],
+      "title": {
+        "fr": "Version 2",
+        "en": "Version 2",
+        "ru": "Версия 2"
+      },
+      "subtitle": {
+        "fr": "Vues extérieures - Villa à Tranche sur mer",
+        "en": "Outside vues - Villa in Tranche sur mer",
+        "ru": "Экстерьеры - Вилла в Транш сюр мэр"
+      },
+      "link": "",
+      "order": 10
+    },
+    {
+      "folder": "Tranche-sur-mer-V1",
+      "category": ["individual"],
+      "title": {
+        "fr": "Version 1",
+        "en": "Version 1",
+        "ru": "Версия 1"
+      },
+      "subtitle": {
+        "fr": "Villa à Tranche sur mer - France",
+        "en": "Villa in Tranche sur mer - France",
+        "ru": "Вилла в Транш сюр мэр - Франция"
+      },
+      "link": "",
+      "order": 11
+    },
+    {
+      "folder": "Agence-Charles-V-Vincennes",
+      "category": ["comercial"],
+      "title": {
+        "fr": "Agence immobilière Charles V",
+        "en": "Real Estate Agency Charles V",
+        "ru": "Агентство недвижимости Charles V"
+      },
+      "subtitle": {
+        "fr": "Vincennes 2018",
+        "en": "Vincennes 2018",
+        "ru": "Vincennes 2018"
+      },
+      "link": "",
+      "order": 12
+    },
+    {
+      "folder": "",
+      "category": ["individual"],
+      "title": {
+        "fr": "Visite virtuelle de l'appartement à Nice",
+        "en": "Virtual tour of the apartment in Nice",
+        "ru": "Виртуальный визит квартиры в Ниццу"
+      },
+      "previewImage": "tours/1/preview.jpg",
+      "link": "tours/1/alinanew.html",
+      "order": 13
+    },
+    {
+      "folder": "Nice-Appartement-2016",
+      "category": ["design"],
+      "title": {
+        "fr": "INTERIEUR DESIGN",
+        "en": "INTERIOR DESIGN",
+        "ru": "RENOVATION"
+      },
+      "subtitle": {
+        "fr": "RÉALISATION 2016 - NICE (FRANCE)",
+        "en": "REALIZATION 2016 - NICE (FRANCE)",
+        "ru": "РЕАЛИЗАЦИЯ 2016 - NICE (FRANCE)"
+      },
+      "link": "",
+      "order": 14
+    },
+    {
+      "folder": "Parc-Hotel-Londres",
+      "category": ["design"],
+      "title": {
+        "fr": "Chambre N°16 Parc Hotel",
+        "en": "Room N°16 Parc Hotel",
+        "ru": "Номер N°16 Parc Hotel"
+      },
+      "subtitle": {
+        "fr": "Londres Angleterre",
+        "en": "London England",
+        "ru": "London England"
+      },
+      "link": "",
+      "order": 15
+    },
+    {
+      "folder": "Ocean-Tree-2016",
+      "category": ["design", "comercial"],
+      "title": {
+        "fr": "Café Ocean Tree à Antony (France)",
+        "en": "Café Ocean Tree in Antony (France)",
+        "ru": "Café Ocean Tree в Антони (Франция)"
+      },
+      "subtitle": {
+        "fr": "Réalisation 2016",
+        "en": "Realization 2016",
+        "ru": "Реализация 2016"
+      },
+      "link": "",
+      "order": 16
+    },
+    {
+      "folder": "Ocean-Tree-V2-2015",
+      "category": ["design", "comercial"],
+      "title": {
+        "fr": "Café Ocean Tree à Antony (France)",
+        "en": "Café Ocean Tree in Antony (France)",
+        "ru": "Café Ocean Tree в Антони (Франция)"
+      },
+      "subtitle": {
+        "fr": "projet version 2 Finale 2015",
+        "en": "project version 2 Final 2015",
+        "ru": "проект версия 2 Финал 2015"
+      },
+      "link": "",
+      "order": 17
+    },
+    {
+      "folder": "Ocean-Tree-V1-2015",
+      "category": ["design", "comercial"],
+      "title": {
+        "fr": "Café Ocean Tree à Antony (France)",
+        "en": "Café Ocean Tree in Antony (France)",
+        "ru": "Café Ocean Tree в Антони (Франция)"
+      },
+      "subtitle": {
+        "fr": "projet version 1 2015",
+        "en": "project version 1 2015",
+        "ru": "проект версия 1 2015"
+      },
+      "link": "",
+      "order": 18
+    },
+    {
+      "folder": "Nice-Design-2016",
+      "category": ["individual", "design"],
+      "title": {
+        "fr": "Interior Design",
+        "en": "Interior Design",
+        "ru": "RENOVATION"
+      },
+      "subtitle": {
+        "fr": "2016 - Nice (France)",
+        "en": "2016 - Nice (France)",
+        "ru": "2016 - Nice (France)"
+      },
+      "link": "",
+      "order": 19
+    },
+    {
+      "folder": "Massy-Design-2015",
+      "category": ["design"],
+      "title": {
+        "fr": "Interior Design",
+        "en": "Interior Design",
+        "ru": "RENOVATION"
+      },
+      "subtitle": {
+        "fr": "2015 - Massy (France)",
+        "en": "2015 - Massy (France)",
+        "ru": "2015 - Massy (France)"
+      },
+      "link": "",
+      "order": 20
+    },
+    {
+      "folder": "Antony-Design-2015",
+      "category": ["design"],
+      "title": {
+        "fr": "Interior Design",
+        "en": "Interior Design",
+        "ru": "RENOVATION"
+      },
+      "subtitle": {
+        "fr": "2015 - Antony (France)",
+        "en": "2015 - Antony (France)",
+        "ru": "2015 - Antony (France)"
+      },
+      "link": "",
+      "order": 21
+    },
+    {
+      "folder": "Nogent-sur-Marne-2014",
+      "category": ["individual"],
+      "title": {
+        "fr": "renovation / extension",
+        "en": "renovation / extension",
+        "ru": "реновация / расширение"
+      },
+      "subtitle": {
+        "fr": "2014 - Nogent-sur-Marne (France)",
+        "en": "2014 - Nogent-sur-Marne (France)",
+        "ru": "2014 - Nogent-sur-Marne (France)"
+      },
+      "link": "",
+      "order": 22
+    },
+    {
+      "folder": "Massy-Renovation-2014",
+      "category": ["design"],
+      "title": {
+        "fr": "renovation",
+        "en": "renovation",
+        "ru": "реновация"
+      },
+      "subtitle": {
+        "fr": "2014 - Massy (France)",
+        "en": "2014 - Massy (France)",
+        "ru": "2014 - Massy (France)"
+      },
+      "link": "",
+      "order": 23
+    },
+    {
+      "folder": "Kirovske-2008",
+      "category": ["individual"],
+      "title": {
+        "fr": "RESIDENTIAL",
+        "en": "RESIDENTIAL",
+        "ru": "ЖИЛОЙ"
+      },
+      "subtitle": {
+        "fr": "2008 - Kirovske (ukraine)",
+        "en": "2008 - Kirovske (ukraine)",
+        "ru": "2008 - Кировское (украина)"
+      },
+      "link": "",
+      "order": 24
+    },
+    {
+      "folder": "Moscow-Bank-2013",
+      "category": ["comercial", "design"],
+      "title": {
+        "fr": "Interior Design",
+        "en": "Interior Design",
+        "ru": "Interior Design"
+      },
+      "subtitle": {
+        "fr": "2013 - Moscow (russia)",
+        "en": "2013 - Moscow (russia)",
+        "ru": "2013 - Москва (россия)"
+      },
+      "link": "",
+      "order": 25
+    },
+    {
+      "folder": "Paris-Renovation-2011",
+      "category": ["design"],
+      "title": {
+        "fr": "renovation",
+        "en": "renovation",
+        "ru": "реновация"
+      },
+      "subtitle": {
+        "fr": "2011 - Paris (france)",
+        "en": "2011 - Paris (france)",
+        "ru": "2011 - Париж (франция)"
+      },
+      "link": "",
+      "order": 26
+    },
+    {
+      "folder": "Saint-Ouen-2012",
+      "category": ["design"],
+      "title": {
+        "fr": "renovation",
+        "en": "renovation",
+        "ru": "реновация"
+      },
+      "subtitle": {
+        "fr": "2012 - Saint-Ouen (France)",
+        "en": "2012 - Saint-Ouen (France)",
+        "ru": "2012 - Saint-Ouen (France)"
+      },
+      "link": "",
+      "order": 27
+    },
+    {
+      "folder": "Dnipropetrovsk-Sajovka-2013",
+      "category": ["individual"],
+      "title": {
+        "fr": "RESIDENTIAL",
+        "en": "RESIDENTIAL",
+        "ru": "ЖИЛОЙ"
+      },
+      "subtitle": {
+        "fr": "2013 - Dnipropetrovsk (ukraine)",
+        "en": "2013 - Dnipropetrovsk (ukraine)",
+        "ru": "2013 - Днепропетровск (украина)"
+      },
+      "link": "",
+      "order": 28
+    },
+    {
+      "folder": "Sochi-Burger-King-2013",
+      "category": ["comercial"],
+      "title": {
+        "fr": "Interior Design",
+        "en": "Interior Design",
+        "ru": "Interior Design"
+      },
+      "subtitle": {
+        "fr": "2013 - Sochi (russia)",
+        "en": "2013 - Sochi (russia)",
+        "ru": "2013 - Сочи (россия)"
+      },
+      "link": "",
+      "order": 29
+    },
+    {
+      "folder": "Dnipropetrovsk-2010",
+      "category": ["individual"],
+      "title": {
+        "fr": "RESIDENTIAL",
+        "en": "RESIDENTIAL",
+        "ru": "ЖИЛОЙ"
+      },
+      "subtitle": {
+        "fr": "2010 - Dnipropetrovsk (ukraine)",
+        "en": "2010 - Dnipropetrovsk (ukraine)",
+        "ru": "2010 - Днепропетровск (украина)"
+      },
+      "link": "",
+      "order": 30
+    },
+    {
+      "folder": "Dnipropetrovsk-2009",
+      "category": ["individual", "design"],
+      "title": {
+        "fr": "RESIDENTIAL",
+        "en": "RESIDENTIAL",
+        "ru": "ЖИЛОЙ"
+      },
+      "subtitle": {
+        "fr": "2009 - Dnipropetrovsk (ukraine)",
+        "en": "2009 - Dnipropetrovsk (ukraine)",
+        "ru": "2009 - Днепропетровск (украина)"
+      },
+      "link": "",
+      "order": 31
+    }
+  ]
+}

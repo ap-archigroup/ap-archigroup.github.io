@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
+
+  <data name="en_project_title"><![CDATA[appaet alina]]></data>
+
+
+
+  <data name="en_pano9_title"><![CDATA[Séjour]]></data>
+  <data name="en_spotpolygon40_tooltip"><![CDATA[le hall et la chambre]]></data>
+
+
+  <data name="en_pano10_title"><![CDATA[la chambre ]]></data>
+  <data name="en_spotpolygon41_tooltip"><![CDATA[le hall et le séjour]]></data>
+
+
+  <data name="en_pano36_title"><![CDATA[le hall]]></data>
+  <data name="en_spotpolygon38_tooltip"><![CDATA[le séjour]]></data>
+  <data name="en_spotpolygon39_tooltip"><![CDATA[la chambre]]></data>
+
+
+
+
+
+
+  <data name="en_contextmenuopenFsLabel"><![CDATA[Enter Fullscreen]]></data>
+  <data name="en_contextmenucloseFsLabel"><![CDATA[Exit Fullscreen]]></data>
+  <data name="en_contextmenunormallabel"><![CDATA[Normal View]]></data>
+  <data name="en_contextmenuarchitecturallabel"><![CDATA[Architectural View]]></data>
+  <data name="en_contextmenulittleplanetlabel"><![CDATA[Little Planet View]]></data>
+  <data name="en_prevnexttheme2prevSceneTip"><![CDATA[Previous Scene]]></data>
+  <data name="en_prevnexttheme2nextSceneTip"><![CDATA[Next Scene]]></data>
+  <data name="en_controlBar_roundedprevSceneTip"><![CDATA[Previous panorama]]></data>
+  <data name="en_controlBar_roundednextSceneTip"><![CDATA[Next panorama]]></data>
+  <data name="en_controlBar_roundedzoomInTip"><![CDATA[Zoom in]]></data>
+  <data name="en_controlBar_roundedzoomOutTip"><![CDATA[Zoom out]]></data>
+  <data name="en_controlBar_roundedmoveLeftTip"><![CDATA[Move left]]></data>
+  <data name="en_controlBar_roundedmoveRightTip"><![CDATA[Move right]]></data>
+  <data name="en_controlBar_roundedmoveUpTip"><![CDATA[Move up]]></data>
+  <data name="en_controlBar_roundedmoveDownTip"><![CDATA[Move down]]></data>
+  <data name="en_controlBar_roundedopenFsTip"><![CDATA[Enter fullscreen]]></data>
+  <data name="en_controlBar_roundedcloseFsTip"><![CDATA[Exit fullscreen]]></data>
+  <data name="en_controlBar_roundedautorotateOnTip"><![CDATA[Start autorotation]]></data>
+  <data name="en_controlBar_roundedautorotateOffTip"><![CDATA[Stop autorotation]]></data>
+  <data name="en_controlBar_roundedautotourOnTip"><![CDATA[Start automatic tour]]></data>
+  <data name="en_controlBar_roundedautotourOffTip"><![CDATA[Stop automatic tour]]></data>
+  <data name="en_controlBar_roundedsoundsOnTip"><![CDATA[Start sounds]]></data>
+  <data name="en_controlBar_roundedsoundsOffTip"><![CDATA[Stop sounds]]></data>
+  <data name="en_controlBar_roundeddisplayHelpTip"><![CDATA[Show help screen]]></data>
+  <data name="en_controlBar_roundedhideHelpTip"><![CDATA[Hide help screen]]></data>
+  <data name="en_controlBar_roundeddisplayControlsTip"><![CDATA[Show controls]]></data>
+  <data name="en_controlBar_roundedhideControlsTip"><![CDATA[Hide controls]]></data>
+  <data name="en_controlBar_roundedctrlmodeDragTip"><![CDATA[Change control mode]]></data>
+  <data name="en_controlBar_roundedctrlmodeMoveTip"><![CDATA[Change control mode]]></data>
+
+
+  <data name="en_vr_setup_hmd0"><![CDATA[CHOIX DU HMD]]></data>
+  <data name="en_vr_setup_advanced"><![CDATA[PARAMETRES AVANCES]]></data>
+  <data name="en_vr_setup_title"><![CDATA[PARAMETRES WEB VR]]></data>
+  <data name="en_vr_setup_dvn1"><![CDATA[Appareil:]]></data>
+  <data name="en_vr_setup_siz1"><![CDATA[Taille de l&#39;écran:]]></data>
+  <data name="en_vr_setup_ipd1"><![CDATA[IPD:]]></data>
+  <data name="en_vr_setup_hmd1"><![CDATA[HMD:]]></data>
+  <data name="en_vr_setup_hmd3"><![CDATA[Personnaliser]]></data>
+  <data name="en_vr_setup_cal"><![CDATA[Calibrer le gyroscope]]></data>
+  <data name="en_vr_setup_sav"><![CDATA[ENREGISTRER]]></data>
+  <data name="en_vr_setup_rst"><![CDATA[REINITIALISER]]></data>
+  <data name="en_vr_setup_simple"><![CDATA[SIMPLE]]></data>
+  <data name="en_vr_setup_cls"><![CDATA[FERMER]]></data>
+  <data name="en_vr_setup_m31"><![CDATA[PARAMETRES DU HMD]]></data>
+  <data name="en_vr_setup_fov1"><![CDATA[FOV:]]></data>
+  <data name="en_vr_setup_dst1"><![CDATA[Distorsion:]]></data>
+  <data name="en_vr_setup_d2tx"><![CDATA[Distorsion 2:]]></data>
+  <data name="en_vr_setup_vig1"><![CDATA[Vignettage:]]></data>
+  <data name="en_vr_setup_cac1"><![CDATA[Aberration chromatique:]]></data>
+  <data name="en_vr_setup_olp1"><![CDATA[Recouvrement:]]></data>
+  <data name="en_vr_setup_m35"><![CDATA[RETOUR]]></data>
+  <data name="en_vr_setup_cb1"><![CDATA[GYROSCOPE]]></data>
+  <data name="en_vr_setup_cb2"><![CDATA[Placer l&#39;appareil sur une surface plane et stable[br]puis tapez sur CALIBRER[br]pour corriger la dérive du gyroscope.]]></data>
+  <data name="en_vr_setup_cb3"><![CDATA[CALIBRER]]></data>
+  <data name="en_vr_setup_cb4"><![CDATA[REINITIALISER]]></data>
+  <data name="en_vr_setup_cb5"><![CDATA[RETOUR]]></data>
+  <data name="en_vr_setup_cb6"><![CDATA[Calibration en cours...]]></data>
+  <data name="en_vr_setup_cb7"><![CDATA[Calibration réussie]]></data>
+  <data name="en_vr_setup_cb8"><![CDATA[Echec de la calibration]]></data>
+  <data name="en_vr_setup_unavailable"><![CDATA[Le mode VR[br]n&#39;est pas disponible sur cet appareil]]></data>
+
+
+
+
+
+
+
+
+
+
+
+
+</krpano>

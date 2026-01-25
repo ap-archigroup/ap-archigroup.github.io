@@ -1606,6 +1606,14 @@ $(".open_fancybox24").click(function() {
         {
             href : basePath + '_include/img/work/FancyBoxes/fancybox24/4.jpeg',
            
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox24/5.JPG',
+           
+        },
+        {
+            href : basePath + '_include/img/work/FancyBoxes/fancybox24/6.JPG',
+           
         }
     ], {
         nextEffect : 'none',

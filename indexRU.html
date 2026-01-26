@@ -6,17 +6,25 @@
 <!--[if gt IE 8]><!--> <html lang="ru"> <!--<![endif]-->
 <head>
 <link rel="shortcut icon" href="_include/img/favicon.png" type="image/x-icon">
+<link rel="canonical" href="https://ap-archigroup.com/indexRU.html">
+
 <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>ap-archigroup</title>
+<title>Архитектор в Мэсси – Алина Пайет | AP ArchiGroup</title>
 
-<meta name="description" content="Architect Massy alina payet" /> 
-<meta name="keywords" content="Architect Massy alina payet" /> 
+<meta name="description" content="AP ArchiGroup, архитектурное бюро в Мэсси под руководством Алины Пайет. Жилые проекты, реконструкция и индивидуальное архитектурное проектирование." />
+ 
 <!-- Mobile Specifics -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="HandheldFriendly" content="true"/>
-<meta name="MobileOptimized" content="320"/>   
+<meta name="MobileOptimized" content="320"/>  
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Архитектор в Мэсси – Алина Пайет | AP ArchiGroup">
+<meta property="og:description" content="Архитектурное бюро в Мэсси. Жилые проекты, реконструкция и индивидуальное архитектурное проектирование.">
+<meta property="og:url" content="https://ap-archigroup.com/indexRU.html">
+<meta property="og:image" content="https://ap-archigroup.com/_include/img/logo.png">
 
 <!-- Mobile Internet Explorer ClearType Technology -->
 <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
@@ -25,8 +33,7 @@
 <link href="_include/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Main Style -->
-<link href="_include/css/main.css" rel="stylesheet">
-<link href="RU/language-flags.css" rel="stylesheet">
+<link href="_include/css/main.css?v=20260105-2" rel="stylesheet">
 
 <!-- Supersized -->
 <link href="_include/css/supersized.css" rel="stylesheet">
@@ -63,8 +70,27 @@
 
 <!-- Modernizr -->
 <script src="_include/js/modernizr.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Architect",
+  "name": "AP ArchiGroup",
+  "image": "https://ap-archigroup.com/_include/img/logo.png",
+  "url": "https://ap-archigroup.com/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Massy",
+    "addressCountry": "FR"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Alina Payet"
+  }
+}
+</script>
+
  
-<a href="https://plus.google.com/114325527793417128361" rel="publisher"></a>
 <!-- Analytics -->
 <script type="text/javascript">
 
@@ -89,6 +115,10 @@
 
 
 <body>
+<h1 class="visually-hidden">
+Архитектор в Мэсси – Архитектурное бюро AP ArchiGroup (Алина Пайет)
+</h1>
+
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T7PJGB"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -108,20 +138,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End of Splash Screen -->
 
 <!-- Homepage Slider -->
-<div id="home-slider" style="background: url('_include/img/main.jpg') 50%;">	
-    <div class="overlay"></div>
-
-    <div class="slider-text">
-	<ul id="slidertext">
-	<li><a class="mylink" href="#work" alt="Логотип" /> </a></li>
-	<li><a class="languENG"href="indexEN.html"> </a></li>
-	<li><a class="languFR" href="index.html"> </a></li>
-<li><a class="languRU" href="indexRU.html"> </a></li> 
-	</ul>
-    </div>   
+<div id="home-slider">	
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <a class="lang-btn" href="index.html" title="Français">FR</a>
+        <a class="lang-btn" href="indexEN.html" title="English">EN</a>
+        <a class="lang-btn" href="indexRU.html" title="Русский">RU</a>
+    </div>
+    
+    <!-- Hero Content Container -->
+    <div class="hero-container">
+        <!-- Left Side: Title and Subtitle -->
+        <div class="hero-left">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="_include/img/logo.png" alt="AP ArchiGroup Logo" />
+                </div>
+                <h1 class="hero-title">AP-ArchiGroup</h1>
+                <div class="hero-subtitle">Architecture & Design</div>
+                <div class="hero-intro">
+                    <div class="hero-photo">
+                        <img src="_include/img/head.jpg" alt="Алина Пайет - Архитектор" />
+                        <div class="photo-ring"></div>
+                    </div>
+                    <p class="hero-description">Архитектурное бюро под руководством <strong>Алины Пайет</strong>. Одной ногой в прошлом, другой в будущем: вневременные проекты, в которых приоритет отдается качеству жизни. Баланс между элегантностью структуры и удовольствием от использования.</p>
+                </div>
+                <a href="#work" class="hero-cta smooth-scroll">Открыть наши проекты</a>
+            </div>
+        </div>
+        
+        <!-- Right Side: Projects Grid -->
+        <div class="hero-right">
+            <div class="projects-grid" id="hero-projects-grid">
+                <!-- Projects will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
 	 
 	<div class="control-nav">
-     
         <a id="nextsection" href="#Service"><i class="font-icon-arrow-simple-down"></i></a>
     </div>
 </div>
@@ -130,23 +184,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Header -->
 <header>
     <div class="sticky-nav">
-    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+    	<button id="mobile-nav" class="menu-nav" aria-label="Toggle menu" aria-expanded="false">
+    		<span class="hamburger-box">
+    			<span class="hamburger-inner"></span>
+    		</span>
+    	</button>
          <div id="logo">
-        	<a id="goUp" href="#home-slider" title="Brushed | Responsive One Page Template">Brushed Template</a>
+        	<a id="goUp" href="#home-slider" title="AP ArchiGroup - Architecture & Design">
+        		<img src="_include/img/logo.png" alt="AP ArchiGroup Logo" />
+        	</a>
         </div>
         <nav id="menu">
         	<ul id="menu-nav">
-            	<li class="current"><a href="#home-slider">главная</a></li>
-                <li class="has-submenu"><a href="#Service">услуги</a>
+            	<li class="current"><a href="#home-slider">Главная</a></li>
+				<li class="has-submenu"><a href="#Service">Услуги</a>
                     <ul class="submenu">
                         <li><a href="javascript:void(0)" class="open_service_architecture_ru">Архитектура</a></li>
                         <li><a href="javascript:void(0)" class="open_service_constructing_ru">Строительство</a></li>
                         <li><a href="javascript:void(0)" class="open_service_furnishing_ru">Мебель</a></li>
                     </ul>
                 </li>
-                <li><a href="#work">работы</a></li>
-                <li><a href="#about"> о нас</a></li>
-                <li><a href="#contact">контакты</a></li>		 
+                <li><a href="#work">Проекты</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>		 
             </ul>
         </nav>
         
@@ -162,10 +222,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="row">
         <div class="span12">
             <div class="title-page">
-                <h2 class="title">НАШИ УСЛУГИ</h2>
-				
-                <h1 class="title-description">Мы предлагаем полный спектр услуг от проектирования до строительства и изготовления мебели</h1>
-           	<div class="line"></div>
+                <h2 class="title">Наши архитектурные услуги</h2>
+                    <h3 class="title-description">
+                    Мы предлагаем полный спектр услуг от проектирования до строительства и меблировки
+                    </h3>
+                <div class="line"></div>
 		   </div>
 		
         </div>
@@ -226,9 +287,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- End People -->
 </div>
 </div>
-<!-- End Service Section -->
+<!-- Service Section -->
 
 <!-- Our Work Section -->
+
+
 <div id="work" class="page">
 	<div class="container">
     	<!-- Title Page -->
@@ -236,13 +299,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="span12">
                 <div class="title-page">
                      
-<h2 class="title">НАШИ ПРОЕКТЫ</h2>
-				
-                <h1 class="title-description">Для получения дополнительной информации нажмите на изображение</h1>
-					<div class="line"></div>
+                <h2 class="title">Наши архитектурные проекты</h2>
+                <h3 class="title-description">Для получения дополнительной информации нажмите на изображение</h3>
                 </div>
             </div>
         </div>
+		  
+				
+				 
         <!-- End Title Page -->
         
          <!-- Portfolio Projects -->
@@ -251,7 +315,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             	<!-- Filter -->
                 <nav id="options" class="work-nav" style="text-align: center; margin-bottom: 30px;">
                     <ul id="filters" class="option-set" data-option-key="filter" style="display: inline-block;">
-                        <li style="display: inline-block;"><a href="#filter" data-option-value="*" class="selected">Все проекты</a></li>
+                        <li style="display: inline-block;"><a href="#filter" data-option-value="*" class="selected">Наши проекты</a></li>
                         <li style="display: inline-block;"><a href="#filter" data-option-value=".individual">Частные дома</a></li>
                         <li style="display: inline-block;"><a href="#filter" data-option-value=".design">Дизайн</a></li>
                         <li style="display: inline-block;"><a href="#filter" data-option-value=".comercial">Общественные</a></li>				
@@ -265,11 +329,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="span12">
             	<div class="row">
                 	<section id="projects">
-                    	<ul id="thumbs">`r`n                    <!-- Projects will be loaded dynamically from projects.json -->`r`n                    </ul>`r`n                    </section>`r`n                    `r`n            </div>`r`n            </div>`r`n        </div>`r`n        <!-- End Portfolio Projects -->
+                    	<ul id="thumbs">
+                    	<!-- Projects will be loaded dynamically from projects.json -->
+                    	</ul>
+                    </section>
+                    
+            	</div>
+            </div>
+        </div>
+        <!-- End Portfolio Projects -->
     </div>
 </div>
 <!-- End Our Work Section -->
-
+ 
+     
 <!-- CHIFFRES Section -->
 <div id="NOSCHIFFRES" class="page-alternate">
 <div class="container">
@@ -277,7 +350,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="row">
         <div class="span12">
             <div class="title-page">
-                <h2 class="title">СТАТИСТИКА</h2>               
+                <h2 class="title">НАША СТАТИСТИКА</h2>               
            	<div class="line"></div>
 		   </div>
 		
@@ -353,7 +426,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </div>
 <!-- CHIFFRES Section -->
-
+	 
 <!-- About Section -->
 <div id="about" class="page">
 <div class="container">
@@ -361,10 +434,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="row">
         <div class="span12">
             <div class="title-page">
-                <h2 class="title">о нас</h2>
-                <h1 class="title-description">Опыт проектирования подкреплен целым рядом реализованых объектов, от реконструкции квартир до строительства общественых зданий</h1>
-			 
-            </div>
+                <h2 class="title">Наше архитектурное бюро в Мэсси</h2>
+<h3 class="title-description">Опыт, отмеченный рядом достижений...</h3>
+<div class="line"></div>
+		   </div>
+		
         </div>
     </div>
     <!-- End Title Page -->
@@ -378,20 +452,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div class="image-wrap">
                         <div class="hover-wrap">
                             <span class="overlay-img"></span>
-                            <span class="overlay-text-thumb">FOUNDER</span>
+                            <span class="overlay-text-thumb">ОСНОВАТЕЛЬ</span>
                         </div>
                         <img src="_include/img/head.jpg" alt="Alina Payet">
                     </div>
                 </div>
                 <div class="span7">
                     <h3 class="profile-name">Алина Пайет</h3>
-                    <p class="profile-description">Диплом архитектора Высшей национальной архитектурной школы города Версаля, Франция, 2006 год. Опыт работы приобретался в трех парижских архитектурных агентствах. Архитектурное агенство было создано в марте 2011 года.<br><br>
-Стиль: приоритет - качество жизни вне времени.<br><br>
-Цели: найти равновесие между элегантностью структуры и комфортом обитания. Одним из ключевых условий успеха является работа над пространством, принимая во внимание стиль жизни и желания тех, кто будет это пространство использовать.</p>
+                    <p class="profile-description">Получив диплом в ENSAV в Версале в 2006 году, она начала свою профессиональную карьеру в нескольких парижских агентствах, прежде чем начать свою индивидуальную карьеру в 2011 году.<br><br>
+Стиль: Одной ногой в прошлом, другой в будущем, она создает вневременные проекты, в которых приоритет отдается качеству жизни.<br><br>
+Ее цель: «Найти баланс между элегантностью структуры и удовольствием от использования. Один из ключей к успеху — это умение работать с пространством в соответствии с образом жизни и пожеланиями людей, которые будут там жить».</p>
                 </div>
             </div>
         </div>
         <!-- End Profile -->
+        
+      
         
     </div>
     <!-- End People -->
@@ -407,8 +483,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="row">
         <div class="span12">
             <div class="title-page">
-                <h2 class="title">свяжитесь с нами</h2>
-                <h1 class="title-description">Вдохните жизнь в ваши проекты</h1>
+                <h2 class="title">Свяжитесь с нами</h2>
+                <h3 class="title-description"> Чтобы воплотить ваши проекты в жизнь</h3>
             </div>
         </div>
     </div>
@@ -560,7 +636,74 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         console.log('Fallback navigation initialized');
     }
 })();
+
+// Smooth scroll for hero CTA button
+(function() {
+    document.addEventListener('DOMContentLoaded', function() {
+        var smoothScrollLinks = document.querySelectorAll('a.smooth-scroll[href^="#"]');
+        
+        for (var i = 0; i < smoothScrollLinks.length; i++) {
+            smoothScrollLinks[i].addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                var targetId = this.getAttribute('href').substring(1);
+                var targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    var headerOffset = 60;
+                    var elementPosition = targetElement.offsetTop;
+                    var offsetPosition = elementPosition - headerOffset;
+                    
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        }
+    });
+})();
 </script>
+
+<!-- Load Hero Projects -->
+<script>
+(function() {
+    // Load hero projects from JSON
+    fetch('projects/hero-projects.json')
+        .then(response => response.json())
+        .then(data => {
+            const grid = document.getElementById('hero-projects-grid');
+            if (grid && data.projects) {
+                data.projects.forEach(folderName => {
+                    const gridItem = document.createElement('div');
+                    gridItem.className = 'grid-item';
+                    
+                    const img = document.createElement('img');
+                    img.src = 'projects/list_of_projects/' + folderName + '/preview.jpg';
+                    img.alt = folderName.replace(/-/g, ' ');
+                    img.loading = 'lazy';
+                    
+                    gridItem.appendChild(img);
+                    grid.appendChild(gridItem);
+                });
+            }
+        })
+        .catch(error => {
+            console.error('Error loading hero projects:', error);
+            // Fallback to default image if JSON fails
+            const grid = document.getElementById('hero-projects-grid');
+            if (grid) {
+                for (let i = 0; i < 9; i++) {
+                    const gridItem = document.createElement('div');
+                    gridItem.className = 'grid-item';
+                    gridItem.innerHTML = '<img src="_include/img/preview3.jpg" alt="Проект ' + (i + 1) + '">';
+                    grid.appendChild(gridItem);
+                }
+            }
+        });
+})();
+</script>
+
 <!-- End Js -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

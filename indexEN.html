@@ -6,17 +6,25 @@
 <!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
 <head>
 <link rel="shortcut icon" href="_include/img/favicon.png" type="image/x-icon">
+<link rel="canonical" href="https://ap-archigroup.com/indexEN.html">
+
 <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>ap-archigroup</title>
+<title>Architect in Massy – Alina Payet | AP ArchiGroup</title>
 
-<meta name="description" content="Architect Massy alina payet" /> 
-<meta name="keywords" content="Architect Massy alina payet" /> 
+<meta name="description" content="AP ArchiGroup, architectural firm in Massy led by Alina Payet. Residential projects, renovations and custom architectural design." />
+ 
 <!-- Mobile Specifics -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="HandheldFriendly" content="true"/>
-<meta name="MobileOptimized" content="320"/>   
+<meta name="MobileOptimized" content="320"/>  
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Architect in Massy – Alina Payet | AP ArchiGroup">
+<meta property="og:description" content="Architectural firm in Massy. Residential projects, renovation and custom architectural design.">
+<meta property="og:url" content="https://ap-archigroup.com/indexEN.html">
+<meta property="og:image" content="https://ap-archigroup.com/_include/img/logo.png">
 
 <!-- Mobile Internet Explorer ClearType Technology -->
 <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
@@ -25,8 +33,7 @@
 <link href="_include/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Main Style -->
-<link href="_include/css/main.css" rel="stylesheet">
-<link href="EN/language-flags.css" rel="stylesheet">
+<link href="_include/css/main.css?v=20260105-2" rel="stylesheet">
 
 <!-- Supersized -->
 <link href="_include/css/supersized.css" rel="stylesheet">
@@ -63,8 +70,27 @@
 
 <!-- Modernizr -->
 <script src="_include/js/modernizr.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Architect",
+  "name": "AP ArchiGroup",
+  "image": "https://ap-archigroup.com/_include/img/logo.png",
+  "url": "https://ap-archigroup.com/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Massy",
+    "addressCountry": "FR"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Alina Payet"
+  }
+}
+</script>
+
  
-<a href="https://plus.google.com/114325527793417128361" rel="publisher"></a>
 <!-- Analytics -->
 <script type="text/javascript">
 
@@ -84,9 +110,15 @@
 </script>
 
 <!-- End Analytics -->
+
 </head>
 
+
 <body>
+<h1 class="visually-hidden">
+Architect in Massy – AP ArchiGroup Architectural Firm (Alina Payet)
+</h1>
+
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T7PJGB"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -106,20 +138,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End of Splash Screen -->
 
 <!-- Homepage Slider -->
-<div id="home-slider" style="background: url('_include/img/main.jpg') 50%;">	
-    <div class="overlay"></div>
-
-    <div class="slider-text">
-	<ul id="slidertext">
-	<li><a class="mylink" href="#work" alt="Логотип" /> </a></li>
-	<li><a class="languENG"href="indexEN.html"> </a></li>
-	<li><a class="languFR" href="index.html"> </a></li>
-<li><a class="languRU" href="indexRU.html"> </a></li>
-	</ul>
-    </div>   
+<div id="home-slider">	
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <a class="lang-btn" href="index.html" title="Français">FR</a>
+        <a class="lang-btn" href="indexEN.html" title="English">EN</a>
+        <a class="lang-btn" href="indexRU.html" title="Русский">RU</a>
+    </div>
+    
+    <!-- Hero Content Container -->
+    <div class="hero-container">
+        <!-- Left Side: Title and Subtitle -->
+        <div class="hero-left">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="_include/img/logo.png" alt="AP ArchiGroup Logo" />
+                </div>
+                <h1 class="hero-title">AP-ArchiGroup</h1>
+                <div class="hero-subtitle">Architecture & Design</div>
+                <div class="hero-intro">
+                    <div class="hero-photo">
+                        <img src="_include/img/head.jpg" alt="Alina Payet - Architect" />
+                        <div class="photo-ring"></div>
+                    </div>
+                    <p class="hero-description">Architectural firm led by <strong>Alina Payet</strong>. One foot in the past, the other in the future: timeless projects that prioritize quality of life. The balance between structural elegance and the pleasure of use.</p>
+                </div>
+                <a href="#work" class="hero-cta smooth-scroll">Discover our projects</a>
+            </div>
+        </div>
+        
+        <!-- Right Side: Projects Grid -->
+        <div class="hero-right">
+            <div class="projects-grid" id="hero-projects-grid">
+                <!-- Projects will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
 	 
 	<div class="control-nav">
-     
         <a id="nextsection" href="#Service"><i class="font-icon-arrow-simple-down"></i></a>
     </div>
 </div>
@@ -128,13 +184,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Header -->
 <header>
     <div class="sticky-nav">
-    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+    	<button id="mobile-nav" class="menu-nav" aria-label="Toggle menu" aria-expanded="false">
+    		<span class="hamburger-box">
+    			<span class="hamburger-inner"></span>
+    		</span>
+    	</button>
          <div id="logo">
-        	<a id="goUp" href="#home-slider" title="Brushed | Responsive One Page Template">Brushed Template</a>
+        	<a id="goUp" href="#home-slider" title="AP ArchiGroup - Architecture & Design">
+        		<img src="_include/img/logo.png" alt="AP ArchiGroup Logo" />
+        	</a>
         </div>
         <nav id="menu">
         	<ul id="menu-nav">
-            	<li class="current"><a href="#home-slider">HOME</a></li>
+            	<li class="current"><a href="#home-slider">Home</a></li>
 				<li class="has-submenu"><a href="#Service">Services</a>
                     <ul class="submenu">
                         <li><a href="javascript:void(0)" class="open_service_architecture_en">Architecture</a></li>
@@ -143,7 +205,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </ul>
                 </li>
                 <li><a href="#work">Projects</a></li>
-                <li><a href="#about">about us</a></li>
+                <li><a href="#about">About us</a></li>
                 <li><a href="#contact">Contact</a></li>		 
             </ul>
         </nav>
@@ -152,6 +214,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	
 </header>
 <!-- End Header -->
+
 <!-- Service Section -->
 <div id="Service" class="page-alternate">
 <div class="container">
@@ -159,10 +222,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="row">
         <div class="span12">
             <div class="title-page">
-                <h2 class="title">SERVICES</h2>
-				
-                <h1 class="title-description">We offer a full range of services, from conception to construction, including furniture design and production</h1>
-           	<div class="line"></div>
+                <h2 class="title">Our architectural services</h2>
+                    <h3 class="title-description">
+                    We offer a complete range of services from design to construction and furnishing
+                    </h3>
+                <div class="line"></div>
 		   </div>
 		
         </div>
@@ -225,7 +289,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <!-- Service Section -->
 
-
 <!-- Our Work Section -->
 
 
@@ -236,10 +299,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="span12">
                 <div class="title-page">
                      
-<h2 class="title">projects</h2>
-				
-                <h1 class="title-description">For futher information, click on the image</h1>
-					<div class="line"></div>
+                <h2 class="title">Our architectural projects</h2>
+                <h3 class="title-description">For more information, click on the image</h3>
                 </div>
             </div>
         </div>
@@ -254,10 +315,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             	<!-- Filter -->
                 <nav id="options" class="work-nav" style="text-align: center; margin-bottom: 30px;">
                     <ul id="filters" class="option-set" data-option-key="filter" style="display: inline-block;">
-                        <li style="display: inline-block;"><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
+                        <li style="display: inline-block;"><a href="#filter" data-option-value="*" class="selected">Our projects</a></li>
                         <li style="display: inline-block;"><a href="#filter" data-option-value=".individual">Private residences</a></li>
                         <li style="display: inline-block;"><a href="#filter" data-option-value=".design">Design</a></li>
-                        <li style="display: inline-block;"><a href="#filter" data-option-value=".comercial">Comercial</a></li>				
+                        <li style="display: inline-block;"><a href="#filter" data-option-value=".comercial">Commercial</a></li>				
                     </ul>
                 </nav>
                 <!-- End Filter -->
@@ -268,10 +329,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="span12">
             	<div class="row">
                 	<section id="projects">
-                    	<ul id="thumbs">`r`n                    <!-- Projects will be loaded dynamically from projects.json -->`r`n                    </ul>`r`n                    </section>`r`n                    `r`n            </div>`r`n            </div>`r`n        </div>`r`n        <!-- End Portfolio Projects -->
+                    	<ul id="thumbs">
+                    	<!-- Projects will be loaded dynamically from projects.json -->
+                    	</ul>
+                    </section>
+                    
+            	</div>
+            </div>
+        </div>
+        <!-- End Portfolio Projects -->
     </div>
 </div>
 <!-- End Our Work Section -->
+ 
+     
 <!-- CHIFFRES Section -->
 <div id="NOSCHIFFRES" class="page-alternate">
 <div class="container">
@@ -279,7 +350,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="row">
         <div class="span12">
             <div class="title-page">
-                <h2 class="title">statistics</h2>               
+                <h2 class="title">OUR NUMBERS</h2>               
            	<div class="line"></div>
 		   </div>
 		
@@ -355,6 +426,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </div>
 <!-- CHIFFRES Section -->
+	 
 <!-- About Section -->
 <div id="about" class="page">
 <div class="container">
@@ -362,16 +434,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="row">
         <div class="span12">
             <div class="title-page">
-                <h2 class="title">about us</h2>
-                <h1 class="title-description">An experience marked by a range of achievements, from
-
-private residences and housing developments, to renovations
-
-and extension of public buildings, including restaurants, shops 
-
-and schools</h1>
-			  	<div class="line"></div>
-            </div>
+                <h2 class="title">Our architectural firm in Massy</h2>
+<h3 class="title-description">An experience marked by a range of achievements...</h3>
+<div class="line"></div>
+		   </div>
+		
         </div>
     </div>
     <!-- End Title Page -->
@@ -392,13 +459,16 @@ and schools</h1>
                 </div>
                 <div class="span7">
                     <h3 class="profile-name">Alina Payet</h3>
-                    <p class="profile-description">After graduating from ENSAV at Versailles University in 2006, she spent seven years working for different architectural agencies in the Paris area before setting up her own practice in 2011.<br><br>
-Her style: Keeping one foot in the past and the other in the future. She manages to create imaginative pieces with a timeless quality.<br><br>
-Whatever the project, her goal is crystal clear: "to find a balance between the elegance of the structure and the pleasure of living within it".</p>
+                    <p class="profile-description">After graduating from ENSAV at Versailles in 2006, she began her professional career in several Parisian agencies before starting her solo career in 2011.<br><br>
+Style: One foot in the past, the other in the future, she designs timeless projects that prioritize quality of life.<br><br>
+Her goal: "To find a balance between the elegance of the structure and the pleasure of use. One of the keys to success is knowing how to work with space according to the lifestyles and wishes of the people who will live there".</p>
                 </div>
             </div>
         </div>
         <!-- End Profile -->
+        
+      
+        
     </div>
     <!-- End People -->
 </div>
@@ -413,8 +483,8 @@ Whatever the project, her goal is crystal clear: "to find a balance between the 
     <div class="row">
         <div class="span12">
             <div class="title-page">
-                <h2 class="title">CONTACT US</h2>
-                <h1 class="title-description">To see your project grow</h1>
+                <h2 class="title">Contact us</h2>
+                <h3 class="title-description"> To bring your projects to life</h3>
             </div>
         </div>
     </div>
@@ -455,7 +525,7 @@ Whatever the project, her goal is crystal clear: "to find a balance between the 
                 <div class="span3">
                     <div style="text-align: center; padding: 25px 15px; transition: transform 0.3s;">
                         <i class="font-icon-link" style="font-size: 42px; color: #999; margin-bottom: 15px; display: block;"></i>
-                        <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 10px; color: #333;">Follow Us</h4>
+                        <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 10px; color: #333;">Follow us</h4>
                         <div style="font-size: 24px; margin-top: 12px;">
                             <a href="https://www.linkedin.com/in/alina-payet-b173ab42/" target="_blank" style="display: inline-block; margin: 0 8px; vertical-align: middle; transition: opacity 0.3s;" title="LinkedIn">
                                 <img src="_include/img/social/linkedin.svg" alt="LinkedIn" style="width: 24px; height: 24px; vertical-align: middle;">
@@ -566,7 +636,74 @@ Whatever the project, her goal is crystal clear: "to find a balance between the 
         console.log('Fallback navigation initialized');
     }
 })();
+
+// Smooth scroll for hero CTA button
+(function() {
+    document.addEventListener('DOMContentLoaded', function() {
+        var smoothScrollLinks = document.querySelectorAll('a.smooth-scroll[href^="#"]');
+        
+        for (var i = 0; i < smoothScrollLinks.length; i++) {
+            smoothScrollLinks[i].addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                var targetId = this.getAttribute('href').substring(1);
+                var targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    var headerOffset = 60;
+                    var elementPosition = targetElement.offsetTop;
+                    var offsetPosition = elementPosition - headerOffset;
+                    
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        }
+    });
+})();
 </script>
+
+<!-- Load Hero Projects -->
+<script>
+(function() {
+    // Load hero projects from JSON
+    fetch('projects/hero-projects.json')
+        .then(response => response.json())
+        .then(data => {
+            const grid = document.getElementById('hero-projects-grid');
+            if (grid && data.projects) {
+                data.projects.forEach(folderName => {
+                    const gridItem = document.createElement('div');
+                    gridItem.className = 'grid-item';
+                    
+                    const img = document.createElement('img');
+                    img.src = 'projects/list_of_projects/' + folderName + '/preview.jpg';
+                    img.alt = folderName.replace(/-/g, ' ');
+                    img.loading = 'lazy';
+                    
+                    gridItem.appendChild(img);
+                    grid.appendChild(gridItem);
+                });
+            }
+        })
+        .catch(error => {
+            console.error('Error loading hero projects:', error);
+            // Fallback to default image if JSON fails
+            const grid = document.getElementById('hero-projects-grid');
+            if (grid) {
+                for (let i = 0; i < 9; i++) {
+                    const gridItem = document.createElement('div');
+                    gridItem.className = 'grid-item';
+                    gridItem.innerHTML = '<img src="_include/img/preview3.jpg" alt="Project ' + (i + 1) + '">';
+                    grid.appendChild(gridItem);
+                }
+            }
+        });
+})();
+</script>
+
 <!-- End Js -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

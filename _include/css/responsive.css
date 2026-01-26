@@ -369,6 +369,209 @@
 	.info-text {
 		padding-right: 0;	
 	}
+	
+	/* Services section - triangle layout (2 on top, 1 centered below) */
+	#Service .span4.profile {
+		width: 48% !important;
+		float: left !important;
+		margin-left: 1% !important;
+		margin-right: 1% !important;
+		margin-bottom: 10px;
+	}
+	
+	#Service .span4.profile:nth-child(3) {
+		width: 48% !important;
+		float: none !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		clear: both;
+	}
+	
+	#Service .span4.profile img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	#Service .title {
+		font-size: 18px;
+		margin-bottom: 8px;
+	}
+	
+	#Service .title-description {
+		font-size: 12px;
+		margin-bottom: 15px;
+	}
+	
+	/* Nos Chiffres section - 2x2 grid layout */
+	#NOSCHIFFRES .span3.profile {
+		width: 48% !important;
+		float: left !important;
+		margin-left: 1% !important;
+		margin-right: 1% !important;
+		margin-bottom: 10px;
+	}
+	
+	#NOSCHIFFRES .span3.profile img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	#NOSCHIFFRES .profile-name22 {
+		font-size: 16px;
+		line-height: 1.3;
+	}
+	
+	#NOSCHIFFRES .title {
+		font-size: 20px;
+	}
+	
+	/* Notre agence section - modern mobile layout */
+	#about .title {
+		font-size: 20px;
+		margin-bottom: 8px;
+	}
+	
+	#about .title-description {
+		font-size: 13px;
+		margin-bottom: 15px;
+	}
+	
+	#about .span4 {
+		width: 100% !important;
+		margin-bottom: 15px;
+	}
+	
+	#about .span7 {
+		width: 100% !important;
+	}
+	
+	#about .image-wrap {
+		max-width: 240px;
+		margin: 0 auto;
+		display: block;
+	}
+	
+	#about .image-wrap img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	#about .profile-name {
+		font-size: 22px;
+		text-align: center;
+		margin-bottom: 12px;
+	}
+	
+	#about .profile-description {
+		font-size: 13px;
+		line-height: 1.6;
+		text-align: justify;
+	}
+	
+	/* Contact section - simple 2x2 grid */
+	#contact .title {
+		font-size: 20px;
+		margin-bottom: 8px;
+	}
+	
+	#contact .title-description {
+		font-size: 13px;
+		margin-bottom: 15px;
+	}
+	
+	#contact .span12 {
+		width: 100% !important;
+	}
+	
+	#contact .span12 .row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 !important;
+	}
+	
+	#contact .span3 {
+		width: 50% !important;
+		float: none !important;
+		display: inline-block !important;
+		margin: 0 !important;
+		padding: 0 3px !important;
+		box-sizing: border-box !important;
+		margin-bottom: 8px !important;
+	}
+	
+	#contact .span3 > div {
+		padding: 12px 8px !important;
+	}
+	
+	#contact .span3 i {
+		font-size: 28px !important;
+		margin-bottom: 8px !important;
+	}
+	
+	#contact .span3 h4 {
+		font-size: 13px !important;
+		margin-bottom: 6px !important;
+	}
+	
+	#contact .span3 p,
+	#contact .span3 a {
+		font-size: 11px !important;
+		line-height: 1.3 !important;
+	}
+	
+	#contact .span3 img {
+		width: 18px !important;
+		height: 18px !important;
+	}
+	
+	/* Projects section - 2 per row */
+	#work .title {
+		font-size: 20px;
+		margin-bottom: 8px;
+	}
+	
+	#work .title-description {
+		font-size: 12px;
+		margin-bottom: 15px;
+	}
+	
+	#work .work-nav {
+		margin-bottom: 15px !important;
+	}
+	
+	#work .work-nav #filters li a {
+		font-size: 11px !important;
+		padding: 5px 8px;
+	}
+	
+	#thumbs li.span3 {
+		width: 45% !important;
+		float: left !important;
+		display: block !important;
+		margin: 0 0.5% !important;
+		padding: 0 !important;
+		box-sizing: border-box !important;
+		margin-bottom: 8px !important;
+	}
+	
+	#thumbs {
+		display: block;
+		width: 100%;
+	}
+	
+	#thumbs::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	.item-thumbs {
+		margin-bottom: 0 !important;
+	}
+	
+	.item-thumbs img {
+		height: 130px !important;
+	}
 }
 
 @media (max-width: 320px) {
@@ -410,5 +613,388 @@
 			background-size: 16px 16px;
 		}
 	}
+
+/* Modern Hero Section Responsive Styles */
+
+/* Tablet and below - Stack hero sections vertically */
+@media (max-width: 979px) {
+	.hero-container {
+		flex-direction: column;
+	}
+	
+	.hero-left {
+		padding: 50px 40px;
+		justify-content: center;
+	}
+	
+	.hero-content {
+		text-align: center;
+		max-width: 100%;
+	}
+	
+	.hero-right {
+		padding: 40px;
+	}
+	
+	.projects-grid {
+		max-width: 550px;
+		max-height: 550px;
+		gap: 10px;
+	}
+	
+	.hero-image-container {
+		max-width: 400px;
+	}
+	
+	.hero-title {
+		font-size: 56px;
+		letter-spacing: -2px;
+	}
+	
+	.hero-subtitle {
+		font-size: 20px;
+		letter-spacing: 3px;
+	}
+	
+	.hero-description {
+		font-size: 16px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.language-selector {
+		top: 25px;
+		right: 25px;
+		gap: 6px;
+	}
+	
+	.lang-btn {
+		width: 40px;
+		height: 40px;
+		font-size: 11px;
+	}
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+	.hero-left {
+		padding: 40px 30px;
+	}
+	
+	.hero-right {
+		padding: 30px;
+	}
+	
+	.projects-grid {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		max-width: 500px;
+		max-height: 500px;
+		gap: 8px;
+	}
+	
+	.hero-image-container {
+		max-width: 320px;
+	}
+	
+	.hero-title {
+		font-size: 44px;
+		letter-spacing: -1.5px;
+	}
+	
+	.hero-subtitle {
+		font-size: 16px;
+		letter-spacing: 2px;
+		margin-bottom: 24px;
+	}
+	
+	.hero-description {
+		font-size: 15px;
+		margin-bottom: 30px;
+		line-height: 1.7;
+	}
+	
+	.hero-cta {
+		padding: 16px 36px;
+		font-size: 13px;
+		letter-spacing: 1.2px;
+	}
+	
+	.language-selector {
+		top: 20px;
+		right: 20px;
+	}
+	
+	.lang-btn {
+		width: 38px;
+		height: 38px;
+	}
+	
+	/* Services section - triangle layout (2 on top, 1 centered below) */
+	#Service .span4.profile {
+		width: 48% !important;
+		float: left !important;
+		margin-left: 1% !important;
+		margin-right: 1% !important;
+		margin-bottom: 15px;
+	}
+	
+	#Service .span4.profile:nth-child(3) {
+		width: 48% !important;
+		float: none !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		clear: both;
+	}
+	
+	#Service .span4.profile img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	#Service .title {
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+	
+	#Service .title-description {
+		font-size: 13px;
+		margin-bottom: 20px;
+	}
+	
+	/* Nos Chiffres section - 2x2 grid layout */
+	#NOSCHIFFRES .span3.profile {
+		width: 48% !important;
+		float: left !important;
+		margin-left: 1% !important;
+		margin-right: 1% !important;
+		margin-bottom: 15px;
+	}
+	
+	#NOSCHIFFRES .span3.profile img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	#NOSCHIFFRES .profile-name22 {
+		font-size: 18px;
+		line-height: 1.3;
+	}
+	
+	#NOSCHIFFRES .title {
+		font-size: 24px;
+	}
+	
+	/* Notre agence section - modern mobile layout */
+	#about .title {
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+	
+	#about .title-description {
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	
+	#about .span4 {
+		width: 100% !important;
+		margin-bottom: 20px;
+	}
+	
+	#about .span7 {
+		width: 100% !important;
+	}
+	
+	#about .image-wrap {
+		max-width: 280px;
+		margin: 0 auto;
+		display: block;
+	}
+	
+	#about .image-wrap img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	#about .profile-name {
+		font-size: 24px;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	
+	#about .profile-description {
+		font-size: 14px;
+		line-height: 1.6;
+		text-align: justify;
+	}
+	
+	/* Contact section - simple 2x2 grid */
+	#contact .title {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	
+	#contact .title-description {
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	
+	#contact .span12 {
+		width: 100% !important;
+	}
+	
+	#contact .span12 .row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 !important;
+	}
+	
+	#contact .span3 {
+		width: 50% !important;
+		float: none !important;
+		display: inline-block !important;
+		margin: 0 !important;
+		padding: 0 5px !important;
+		box-sizing: border-box !important;
+		margin-bottom: 10px !important;
+	}
+	
+	#contact .span3 > div {
+		padding: 15px 10px !important;
+	}
+	
+	#contact .span3 i {
+		font-size: 32px !important;
+		margin-bottom: 10px !important;
+	}
+	
+	#contact .span3 h4 {
+		font-size: 14px !important;
+		margin-bottom: 8px !important;
+	}
+	
+	#contact .span3 p,
+	#contact .span3 a {
+		font-size: 12px !important;
+		line-height: 1.4 !important;
+	}
+	
+	#contact .span3 img {
+		width: 20px !important;
+		height: 20px !important;
+	}
+	
+	/* Projects section - 2 per row */
+	#work .title {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	
+	#work .title-description {
+		font-size: 13px;
+		margin-bottom: 20px;
+	}
+	
+	#work .work-nav {
+		margin-bottom: 20px !important;
+	}
+	
+	#work .work-nav #filters li a {
+		font-size: 12px !important;
+		padding: 6px 10px;
+	}
+	
+	#thumbs li.span3 {
+		width: 49% !important;
+		float: left !important;
+		display: block !important;
+		margin: 0 0.5% !important;
+		padding: 0 !important;
+		box-sizing: border-box !important;
+		margin-bottom: 10px !important;
+	}
+	
+	#thumbs {
+		display: block;
+		width: 100%;
+	}
+	
+	#thumbs::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	.item-thumbs {
+		margin-bottom: 0 !important;
+	}
+	
+	.item-thumbs img {
+		height: 150px !important;
+	}
+}
+
+/* Small mobile devices and narrow viewports */
+@media (max-width: 768px) {
+	.hero-left {
+		padding: 30px 20px;
+	}
+	
+	/* Hide the projects grid on mobile */
+	.hero-right {
+		display: none;
+	}
+	
+	.projects-grid {
+		grid-template-columns: repeat(3, 1fr);
+		max-width: 100%;
+		max-height: 380px;
+		gap: 6px;
+	}
+	
+	.grid-item:hover {
+		transform: scale(1.08);
+	}
+	
+	.hero-image-container {
+		max-width: 280px;
+	}
+	
+	.hero-title {
+		font-size: 36px;
+		letter-spacing: -1px;
+	}
+	
+	.hero-subtitle {
+		font-size: 14px;
+		letter-spacing: 2px;
+	}
+	
+	.hero-description {
+		font-size: 14px;
+		line-height: 1.6;
+	}
+	
+	.hero-cta {
+		padding: 14px 32px;
+		font-size: 12px;
+	}
+	
+	.language-selector {
+		top: 15px;
+		right: 15px;
+	}
+	
+	.lang-btn {
+		width: 36px;
+		height: 36px;
+		font-size: 10px;
+	}
+	
+	/* Hide CTA button on mobile, keep only the arrow */
+	.hero-cta {
+		display: none;
+	}
+}
 
 

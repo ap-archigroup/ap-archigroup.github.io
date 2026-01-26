@@ -9,20 +9,24 @@ var BRUSHED = window.BRUSHED || {};
    Mobile Navigation
 ================================================== */
 var mobileMenuClone = $('#menu').clone().attr('id', 'navigation-mobile');
+var backdrop = $('<div class="mobile-menu-backdrop"></div>');
 
 BRUSHED.mobileNav = function(){
 	var windowWidth = $(window).width();
 	
 	if( windowWidth <= 979 ) {
-		if( $('#mobile-nav').length > 0 ) {
-			mobileMenuClone.insertAfter('#menu');
+		if( $('#mobile-nav').length > 0 && $('#navigation-mobile').length === 0 ) {
+			mobileMenuClone.insertAfter('header');
 			$('#navigation-mobile #menu-nav').attr('id', 'menu-nav-mobile');
+			backdrop.insertAfter('header');
 		}
 	} else {
-		$('#navigation-mobile').css('display', 'none');
+		$('#navigation-mobile').removeClass('show');
+		$('.mobile-menu-backdrop').removeClass('show');
 		if ($('#mobile-nav').hasClass('open')) {
 			$('#mobile-nav').removeClass('open');	
 		}
+		$('body').css('overflow', 'auto');
 	}
 }
 
@@ -31,16 +35,31 @@ BRUSHED.listenerMenu = function(){
 		$(this).toggleClass('open');
 		
 		if ($('#mobile-nav').hasClass('open')) {
-			$('#navigation-mobile').slideDown(500, 'easeOutExpo');
+			$('#navigation-mobile').addClass('show');
+			$('.mobile-menu-backdrop').addClass('show');
+			$('body').css('overflow', 'hidden');
 		} else {
-			$('#navigation-mobile').slideUp(500, 'easeOutExpo');
+			$('#navigation-mobile').removeClass('show');
+			$('.mobile-menu-backdrop').removeClass('show');
+			$('body').css('overflow', 'auto');
 		}
 		e.preventDefault();
 	});
 	
+	// Close menu when clicking a link
 	$('#menu-nav-mobile a').on('click', function(){
 		$('#mobile-nav').removeClass('open');
-		$('#navigation-mobile').slideUp(350, 'easeOutExpo');
+		$('#navigation-mobile').removeClass('show');
+		$('.mobile-menu-backdrop').removeClass('show');
+		$('body').css('overflow', 'auto');
+	});
+	
+	// Close menu when clicking backdrop
+	$(document).on('click', '.mobile-menu-backdrop', function(){
+		$('#mobile-nav').removeClass('open');
+		$('#navigation-mobile').removeClass('show');
+		$('.mobile-menu-backdrop').removeClass('show');
+		$('body').css('overflow', 'auto');
 	});
 }
 

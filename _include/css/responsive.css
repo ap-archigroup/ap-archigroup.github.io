@@ -4,17 +4,19 @@
 	}
 	
 	#mobile-nav {
-    	display: block;
-		float: right;
+    	display: flex;
 	}
 	
-	#menu-nav-mobile {
-		margin: 0;
+	header .sticky-nav {
+		padding: 0 20px;
 	}
 	
-	header .sticky-nav #mobile-nav,
+	header .sticky-nav #mobile-nav {
+		margin-right: 0;	
+	}
+	
 	header .sticky-nav.stuck #mobile-nav {
-		margin-right: 20px;	
+		margin-right: 0;	
 	}
 	
 	#social-area #social ul li {
@@ -93,18 +95,16 @@
 	}
 	
 	#mobile-nav {
-    	display: block;
-		float: right;
+    	display: flex;
 	}
 	
-	#menu-nav-mobile {
-		margin-left: -20px;
-		margin-right: -20px;
-		margin-bottom: 0;
+	header .sticky-nav {
+		padding: 0 20px;
 	}
 	
+	header .sticky-nav #mobile-nav,
 	header .sticky-nav.stuck #mobile-nav {
-		margin-right: 20px;	
+		margin-right: 0;	
 	}
 	
 	.work-nav {
@@ -253,23 +253,26 @@
 	}
 	
 	#mobile-nav {
-    	display: block;
-		float: right;
-	}
-	
-	#menu-nav-mobile {
-		margin-left: -20px;
-		margin-right: -20px;
-		margin-bottom: 0;
+    	display: flex;
 	}
 	
 	#navigation-mobile li a {
-		font-size: 14px;
-		padding: 12px 0;
+		font-size: 13px;
+		padding: 14px 20px;
 	}
 	
+	#navigation-mobile .submenu li a {
+		font-size: 11px;
+		padding: 10px 20px 10px 35px;
+	}
+	
+	header .sticky-nav {
+		padding: 0 15px;
+	}
+	
+	header .sticky-nav #mobile-nav,
 	header .sticky-nav.stuck #mobile-nav {
-		margin-right: 20px;	
+		margin-right: 0;	
 	}
 	
 	.work-nav {
@@ -575,8 +578,27 @@
 }
 
 @media (max-width: 320px) {
+	#navigation-mobile {
+		width: 260px;
+	}
+	
 	#navigation-mobile li a {
-		padding: 20px 0;
+		font-size: 12px;
+		padding: 14px 18px;
+	}
+	
+	#navigation-mobile .submenu li a {
+		font-size: 11px;
+		padding: 10px 18px 10px 32px;
+	}
+	
+	.menu-nav {
+		width: 40px;
+		height: 40px;
+	}
+	
+	header .sticky-nav {
+		padding: 0 10px;
 	}
 	
 	.work-nav #filters li a {

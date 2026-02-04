@@ -101,7 +101,7 @@
         "en": "Virtual tour of the apartment in Asnieres sur Seine, North west of Paris 2022",
         "ru": "Виртуальный визит квартиры в Аньер сюр Сен, северо-запад Парижа 2022"
       },
-      "previewImage": "tours/1/preview.jpg",
+      "previewImage": "projects/list_of_projects/Asnieres-Appartement-2022/3.jpg",
       "link": "https://webobook.com/tour/8hsJrOemcJt42ek9RMIYYdPWnKYsdmDG/OGRFwZN3BSvnP0uQFu_IAkVQvYS5aLww",
       "order": 5
     },
@@ -211,7 +211,7 @@
         "ru": "Виртуальный визит квартиры в Ниццу"
       },
       "previewImage": "tours/1/preview.jpg",
-      "link": "tours/1/alinanew.html",
+      "link": "tours/alinanew.html",
       "order": 13
     },
     {
